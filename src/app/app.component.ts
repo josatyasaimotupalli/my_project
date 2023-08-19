@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { every } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my_project';
+  name="josatyasai"
+
+  todays=new Date()
+
+  listData=[
+    {
+      name:'josatyasai',
+      gender:'male'
+    },
+    {
+      name:'sivaram',
+      gender:'male'
+    }
+  ]
+
 }
+
+    
+
+
+

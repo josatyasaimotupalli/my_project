@@ -1,0 +1,8 @@
+.successStatus{
+    color:green;
+    font-size: 40px;
+}
+.errorStatus{
+    color:red;
+    font-size: 40px;
+}
