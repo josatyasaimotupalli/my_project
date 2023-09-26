@@ -1,12 +1,7 @@
-.image-container {
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 20vh; /* Set the container height to the viewport height (optional) */
-  }
+
  img{
     width: 900px; /* Set the desired width */
     height: 300px; /* Set the desired height */
  }
-
+ 
   

@@ -10,19 +10,21 @@
               </div>  
                 <div class="card-body">
                     <form action="login.php" method="post">
-                        <form>
+                        <form action="/action_page.php" class="was-validated">
                           <form [formGroup]="UserViewForm" (ngSubmit)="OnSubmit()">
                             <div class="row mb-4">
                               <div class="col">
                                 <div class="form-outline">
                                   <input type="text" id="form3Example1" class="form-control"formControlName="userName" />
                                   <label class="form-label" for="form3Example1">First name</label>
+                                  <div class="invalid-feedback">Please fill out this field.</div>
                                 </div>
                               </div>
                               <div class="col">
                                 <div class="form-outline">
                                   <input type="text" id="form3Example2" class="form-control"formControlName="userLestName" />
                                   <label class="form-label" for="form3Example2">Last name</label>
+                                  <div class="invalid-feedback">Please fill out this field.</div>
                                 </div>
                               </div>
                             </div>
@@ -30,12 +32,14 @@
                             <div class="form-outline mb-4">
                               <input type="email" id="form3Example3" class="form-control" formControlName="email"/>
                               <label class="form-label" for="form3Example3">Email address</label>
+                              <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
                           
                             <!-- Password input -->
                             <div class="form-outline mb-4">
-                              <input type="password" id="form3Example4" class="form-control"formControlName="password" />
+                              <input type="password" id="form3Example4" class="form-control"formControlName="password" minlength="8" />
                               <label class="form-label" for="form3Example4">Password</label>
+                              <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
                           
                             <!-- Checkbox -->
@@ -47,7 +51,7 @@
                             </div>
                           
                             <!-- Submit button -->
-                            <button type="submit" class="btn btn-dark btn-block mb-4">Sign up</button>
+                            <button type="submit" class="btn btn-dark btn-block mb-4" [routerLink]="'/web/login'">Sign up</button>
 
                           </form>
                             <!-- Register buttons -->
