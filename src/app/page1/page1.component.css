@@ -1,7 +1,68 @@
 
- img{
-    width: 900px; /* Set the desired width */
-    height: 300px; /* Set the desired height */
+img{
+   width: 800px; /* Set the desired width */
+   height:450px; /* Set the desired height */
+   border-radius: 1.5rem;
+}
+
+ .img-farmers{
+   animation-duration: 2s;
+   animation-name: slidein;
  }
  
-  
+ @keyframes slidein {
+   from {
+     margin-left: 100%;
+     width: 300%;
+   }
+ 
+   75% {
+     font-size: 300%;
+     margin-left: 25%;
+     width: 150%;
+   }
+ 
+   to {
+     margin-left: 0%;
+     width: 100%;
+   }
+ }
+ @media (max-width: 600px) {
+  img{
+    width : auto;
+    height: auto;
+  }
+ 
+ }
+
+
+ .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+
+}
+.img{
+  height: 400px;
+}
+
+@media (max-width: 600px) {
+  .img{
+    width : auto;
+    height: auto;
+  }
+}
+.text{
+  color: rgb(42, 31, 65);
+}
+.text1{
+  color: rgba(49, 54, 20, 0.974);
+}
+.text2{
+  color: rgb(49, 18, 49);
+}

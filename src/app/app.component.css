@@ -1,49 +1,240 @@
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+  
+}
 /* Container holding the image and the text */
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  /* Bottom left text */
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-  
-  /* Top left text */
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  
-  /* Top right text */
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-  
-  /* Bottom right text */
-  .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-  }
-  
-  /* Centered text */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .h4{
-    font-family: 'Kaushan Script', cursive;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.h4{
+  font-family: 'Kaushan Script', cursive;
 }
 .h1{
-    font-family: 'Kaushan Script', cursive;
-    font-size:20px;
+  font-family: 'Kaushan Script', cursive;
+  font-size:20px;
 }
+/* Common styles for both light and dark modes */
+body {
+transition: background-color 0.3s, color 0.3s;
+}
+
+.bg-img{
+  position: absolute;
+  width: 2800px;
+  top: calc(50% - 390px);
+  left: calc(50% + 10px);
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  }
+  .fog-1{
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 100px);
+  left: calc(50% + 300px);
+  width: 1900px;
+  transform: translate(-50%, -50%);
+  }
+  .mountain_10{
+  position: absolute;
+  z-index: 3;
+  top: calc(50% + 69px);
+  width: 870px;
+  left: calc(50% + 230px);
+  transform: translate(-50%, -50%);
+  }
+  .fog-2{
+  position: absolute;
+  z-index: 4;
+  top: calc(50% + 95px);
+  left: calc(50% + 7px);
+  width: 1833px;
+  transform: translate(-50%, -50%);
+  }
+  .mountain_9{
+    position: absolute;
+   z-index: 5;
+   top: calc(50% + 119px);
+   width: 463px;
+   left : calc(50% - 457px);
+   transform: translate(-50%, -50%);
+  }
+  .mountain_8{
+    position: absolute;
+   z-index: 6;
+   top: calc(50% + 96px);
+   width: 786px;
+   left: calc(50% - 202px);
+   transform: translate(-50%, -50%);
+  }
+  .fog-3{
+  position: absolute;
+   z-index: 7;
+   top: calc(50% + 171px);
+   left: calc(50% + 29px);
+   width: 449px;
+   transform: translate(-50%, -50%);
+  }
+  .mountain_7 {
+    position: absolute;
+   z-index: 8;
+   width: 515px;
+   top: calc(50% + 134px);
+   left: calc(50% + 305px);
+   transform: translate(-50%, -50%);
+  }
+  .mountain_6{
+    position: absolute;
+   z-index: 10;
+   top: calc(50% + 86.5px);
+   width: 383.5px;
+   left: calc(50% + 590px);
+   transform: translate(-50%, -50%);
+  }
+  .fog-4{
+    position: absolute;
+   z-index: 11;
+   top: calc(50% + 242px);
+   left: calc(50% - 64px);
+   width: 543px;
+   transform: translate(-50%, -50%);
+  }
+  .mountain_5{
+    position: absolute;
+   z-index: 12;
+   top: calc(50% + 269px);
+   width: 583px;
+   left: calc(50% + 130px);
+   transform: translate(-50%, -50%);
+  }
+  .fog-5{
+    position: absolute;
+   z-index: 13;
+   top: calc(50% + 149px);
+   left: calc(50% - 28px);
+   width: 1435px;
+   transform: translate(-50%, -50%);
+  }
+  .mountain_4{
+    position: absolute;
+   z-index: 14;
+   top: calc(50% + 221px);
+   width: 717px;
+   left: calc(50% - 381.5px);
+   transform: translate(-50%, -50%);
+  }
+  .mountain_3{
+    position: absolute;
+   z-index: 15;
+   top: calc(50% + 133px);
+   left: calc(50% + 736px);
+   width: 419px;
+   transform: translate(-50%, -50%);
+  }
+  .fog-6{
+    position: absolute;
+    z-index: 4;
+    width: 1610px;
+    top: calc(50% +85px);
+    left: calc(50%  +10px);
+    transform: translate(-50%, -50%);
+  }
+  .mountain_2{
+    position: absolute;
+   z-index: 17;
+   top: calc(50% + 188px);
+   left: calc(50% + 412px);
+   width: 625px;
+   transform: translate(-50%, -50%);
+  }
+  .mountain_1{
+    position: absolute;
+    z-index: 18;
+    width: 450px;
+    top: calc(50% + 91.5px);
+    left: calc(50%  - 700px);
+    transform: translate(-50%, -50%);
+  }
+  .sun_rays{
+    position: absolute;
+    z-index: 19;
+    width: 50%;
+    top: 0;
+    right: 0;
+  }
+  .black-shadow{
+    position: absolute;
+    z-index: 20;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .text{
+    position: absolute;
+    z-index: 9;
+    top:calc(50% - 130px);
+    left:50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #f8f8f8;
+  }
+  .text h2{
+    font-weight: 100;
+    font-size: 6.5rem;
+    line-height: 0.88;
+  }
+  .text h1{
+    font-weight: 100;
+    font-size: 8rem;
+    line-height: 0.88;
+  }
+  
+  .vignette{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center,rgba(0,0,0,0) 65%, rgba(0,0,0,0.7))
+  }

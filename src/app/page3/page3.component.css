@@ -1,0 +1,95 @@
+img{
+    width: 900px; /* Set the desired width */
+    height: 350px; /* Set the desired height */
+    border-radius: 1.5rem;
+ }
+ .img-fluids{
+    width: 1100px; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+
+ }
+ 
+ .animated-image {
+   animation: fade 3s linear infinite alternate;
+   opacity: 0;
+ }
+ 
+ @keyframes fade {
+   0%, 100% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+   }
+ }
+
+ .animated-images {
+   animation: fade 5s linear infinite alternate;
+   opacity: 0;
+ }
+ 
+ @keyframes fade {
+   0%, 100% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+   }
+ }
+ .animated-imagess {
+   animation: fade 10s linear infinite alternate;
+   opacity: 0;
+ }
+ 
+ @keyframes fade {
+   0%, 100% {
+     opacity: 0;
+   }
+   50% {
+     opacity: 1;
+   }
+ }
+ .img{
+   animation-duration: 2s;
+   animation-name: slidein;
+ }
+ 
+ @keyframes slidein {
+   from {
+     margin-left: 100%;
+     width: 300%;
+   }
+ 
+   75% {
+     font-size: 300%;
+     margin-left: 25%;
+     width: 150%;
+   }
+ 
+   to {
+     margin-left: 0%;
+     width: 100%;
+   }
+ }
+ @media (max-width: 600px) {
+  img{
+    width : auto;
+    height: auto;
+  }
+ 
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+
+}
+ 
+ 
+ 
+ 
