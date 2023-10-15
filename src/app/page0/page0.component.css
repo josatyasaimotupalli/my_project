@@ -28,7 +28,7 @@ h1{
 }
 header nav {
   background-color: rgb(71, 69, 69);
-  max-width: 1700px;
+  max-width: 1800px;
   margin: 0 auto;
   padding:0 2rem;
   display: flex;
@@ -272,7 +272,7 @@ position: absolute;
   color: black;
   font-family: "poppins",sans-serif;
 } 
-.vignette{
+/*.vignette{
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -281,7 +281,7 @@ position: absolute;
   left: 0;
   pointer-events: none;
   background: radial-gradient(ellipse at center,rgba(0,0,0,0) 65%, rgba(0,0,0,0.7))
-}
+}*/
 @keyframes fade-in-up{
   0% {
       transform: scale(0);
@@ -291,22 +291,28 @@ position: absolute;
   }
 }
 
-/* Apply the animation to the image */
-#animated-image {
-  animation: fade-in-up 8s ease-in-out;
-}
+/* Define the fade-in-up animation */
 @keyframes fade-in-up {
   from {
     margin-left: 100%;
     width: 300%;
   }
-
   to {
-    margin-left: 0%;
+    margin-left: 0;
     width: 100%;
   }
 }
-.framers{
-  animation-duration: 10s;
-  animation-name:fade-in-up;
+
+/* Apply the fade-in-up animation to elements with id "animated-image" */
+#animated-image {
+  animation-name: fade-in-up;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
 }
+
+/* Apply the fade-in-up animation to elements with class "framers" */
+.framers {
+  animation: fade-in-up 10s;
+}
+
+
