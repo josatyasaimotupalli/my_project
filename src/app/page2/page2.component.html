@@ -1,30 +1,48 @@
+<section class="container nav">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+          <ul class="navbar-nav me-auto ">
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/page1'">Farmer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Groceries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/page3'">Aquaculture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/page4'">The Weaver</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</section> 
+<br><br>
 <div class="image-container">
     <div class="container-fluid mt-3">
       <div class="row">
         <div class="col text-center">
-          <img src="assets/Firefly Agriculture-Agriculture 82097.png" id="animated-image"style="width: 950px; height:250px;" class="img-fluid img">
+          <img src="assets/Firefly groceries-light orange colour in rice and green tea leafy 13507.png" id="animated-image"style="width: auto; height:auto;" class="img-fluid img">
         </div>
       </div>
     </div>
   </div>
+  <div class="text-center b">
+    <button class="btn btn-outline-dark btn-lg  btn-rounded"  [routerLink]="'/page10'">Farmer Store</button>
+  </div>
   <br>
-  <ul class="nav justify-content-center reveal">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page2"[routerLink]="'/page2'">Agriculture</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-dark"aria-current="page2"[routerLink]="'/page3'">Aquaculture</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"aria-current="page1"[routerLink]="'/page1'" >farmer</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">The Weaver</a>
-    </li>
-  </ul>
-  <br>
-  <br>
-  <div class="text-center reveal">
+  <div class="text-center">
       <h1>MAJOR CROPS OF INDIA</h1>
       <p>India grows almost each and every crop. Can you think why? If we consider the
         varieties of crop grown from Kashmir to Kanyakumari and western coast of Gujarat
@@ -34,17 +52,17 @@
   </div>
   
   <br>
-  <div class="container reveal">
+  <div class="container">
       <div class="row">
         <!-- Image Column -->
-        <div class="col-md-6">
-          <div class="shadow-lg p-0 mb-5 bg-body rounded">
-          <img src="assets/r-s-sagar-qjFjOfboWOA-unsplash (1).jpg" alt="Your Image" class="img-fluid">
+        <div class="col-6 col-md-6">
+          <div class="">
+          <img src="assets/r-s-sagar-qjFjOfboWOA-unsplash (1).jpg" alt="Your Image" class="img-fluid img shadow-lg p-0 mb-5 bg-body rounded-5">
           </div>
         </div>
   
         <!-- Content Column -->
-        <div class="col-md-6">
+        <div class="col-6 col-md-6">
           <h2>Food grains</h2>
           <h6>Crops that are
             used for human
@@ -61,12 +79,12 @@
       <p></p>
     </div>
     <br>
-    <br>
+  
     <div class="container reveal">
       <div class="row">
         <!-- Image Column -->
-        <div class="col-md-6">
-         <h1>Commercial Crops</h1>
+        <div class="col-6 col-md-6">
+         <h2>Commercial Crops</h2>
          <h6>Crops which are grown
             for sale either in raw form
             or in semi-processed form</h6>
@@ -75,26 +93,26 @@
         </div>
   
         <!-- Content Column -->
-        <div class="col-md-6">
-          <div class="shadow-lg p-0 mb-5 bg-body rounded">
-              <img src="assets/victoria-priessnitz-IPuuhSmsFIc-unsplash.jpg" alt="Your Image" class="img-fluid">
+        <div class="col-6 col-md-6">
+          <div class="">
+              <img src="assets/victoria-priessnitz-IPuuhSmsFIc-unsplash.jpg" alt="Your Image" class="img-fluid shadow-lg p-0 mb-5 bg-body img rounded-5">
               </div>
         </div>
       </div>
     </div>
     <br>
-    <br>
+  
     <div class="container reveal">
         <div class="row">
           <!-- Image Column -->
-          <div class="col-md-6">
-            <div class="shadow-lg p-0 mb-5 bg-body rounded">
-            <img src="assets/timothy-newman-_ZH-GRbh0iE-unsplash.jpg" alt="Your Image" class="img-fluid">
+          <div class="col-6 col-md-6">
+            <div class="">
+            <img src="assets/timothy-newman-_ZH-GRbh0iE-unsplash.jpg" alt="Your Image" class="img-fluid shadow-lg p-0 mb-5 bg-body img rounded-5">
             </div>
           </div>
     
           <!-- Content Column -->
-          <div class="col-md-6">
+          <div class="col-6 col-md-6">
             <h2>Plantation Crops</h2>
             <h6>Crops which are grown
                 on Plantations covering
@@ -111,50 +129,187 @@
    <!--<section class="mb-5 mb-lg-10">-->
   
       <h3 class="fw-bold text-center mb-4">Pricing</h3>
+<section class="container">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-12 mb-3">
+        <div class="col-6 col-md-6">
     
-          <div class="card shadow-lg ">
+          <div class="card shadow-lg rounded-5">
             <div class="card-header text-center pt-4">
-              <p class="text-uppercase">
+              <p class="text-uppercase p">
                 <strong>Basic</strong>
               </p>
     
             </div>
             <div class="card-body">
-    
+              <div class="row">
+                <div class="col">
+                  <img src="assets/8173076.jpg" class="img-fluid image9">
+
+                </div>
+                <div class="col">
+
+                </div>
+              </div>
             </div>
           </div>
     
         </div>
     
-        <div class="col-lg-4 col-md-6 mb-3">
+        <div class="col-6 col-md-6">
     
-          <div class="card shadow-lg">
+          <div class="card shadow-lg rounded-5">
             <div class="card-header text-center pt-4">
-              <p class="text-uppercase">
+              <p class="text-uppercase p">
                 <strong>Advanced</strong>
               </p>
             </div>
             <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <img src="assets/4409781.jpg" class="img-fluid image9">
+
+                </div>
+                <div class="col">
+
+                </div>
             </div>
           </div>
-    
-        </div>
-    
-        <div class="col-lg-4 col-md-6 mb-3">
-    
-          <div class="card shadow-lg">
-            <div class="card-header text-center pt-4">
-              <p class="text-uppercase">
-                <strong >Enterprise</strong>
-              </p>
-            </div>
-            <div class="card-body">
-            </div>
-          </div>
-    
         </div>
       </div>
     </div>
+   </div>
+</section>
+<br>
+<div class="row">
+  <div class="col-6 col-sm-6 text-end">
+    <img src="assets/3702077.jpg" alt="logo" class="logo3 img-fluid">
+  </div>
+  <div class="col-6 col-sm-6">
+      <button class="btn btn-outline-dark btn-lg  btn-rounded center" style="margin-top: 70px; margin-left: 20px;" [routerLink]="'/page10'">Farmer Store</button>
+  </div>
+</div>
+<br>
+<section class="content">
+  <!-- Footer -->
+<footer class="text-center text-lg-start text-light bg-dark text-muted shadow-lg rounded-top-5">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block text-white">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div class="">
+      <a href="" class="me-4 link-secondary">
+        <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-facebook-f-24.png"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-instagram-25.png"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-linkedin-25.png"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-twitter-25 (1).png"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5 text-white">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-3 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
+          <!-- Content -->
+          <h5 class="text-uppercase mb-4">
+            <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/icons8-leaf-20 (1).png"></i>Farmer
+          </h5>
+          <p>
+            “Agriculture is the most healthful, most useful, and most noble employment of man.”
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-3 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase  mb-4">
+           Product 
+          </h5>
+          <p>
+            <a href="#!" class="text-reset ">Rice</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Coffee</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Spices</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pulsees</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-3 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase  mb-4">
+            Useful links
+          </h5>
+          <p>
+            <a href="" class="text-reset">Farmer</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Agirculture</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Aquaculture</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">The Weaver</a>
+          </p>
+          
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-3 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase  mb-4">Contact</h5>
+          <p><i class="i"[routerLink]="'/card'"><img src="assets/icons8-homeadvisor-24.png" class="icon"></i>
+             2-134,cinima veedhi,G.vemavaram,East Godavari,Andhra Pradesh-533464
+            </p>
+          <p>
+            <i class="img"  [routerLink]="'/card'"><img src="assets/icons8-gmail-24.png"  class="icon"></i>
+             Farmer@gmail.com
+          </p>
+          <p><i class="i"  [routerLink]="'/card'"><img src="assets/icons8-phone-24.png"  class="icon"></i> +91 93478 77756</p>
+          <p><i class="i"  [routerLink]="'/card'"><img src="assets/icons8-phone-24 (1).png"  class="icon"></i>+91 96667 54367
+
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center text-light p-4" style="background-color: rgba(239, 233, 233, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Farmer.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</section>

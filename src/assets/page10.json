@@ -1,0 +1,66 @@
+[
+    {
+      "title": "rice",
+      "text": "Some quick example text for card 1.",
+      "imageSrc": "assets/white_rice_bags_in_more_different_colours_brand_.jpg"
+    },
+    {
+      "title": "spices ",
+      "text": "Some quick example text for card 2.",
+      "imageSrc": "assets/spices_bags_in_more_different_colours_brand_name.jpg"
+    },
+    {
+        "title": "pulses",
+        "text": "Some quick example text for card 3.",
+        "imageSrc": "assets/pulses_bags_in_different_colours_brand_nameFar.jpg"
+      },
+      {
+        "title": "masoor dal",
+        "text": "Some quick example text for card 4.",
+        "imageSrc": "assets/masoor_dal_bags_brand_nameFarmer_illustratio.jpg"
+      },
+
+
+      {
+        "title": "green peas",
+        "text": "Some quick example text for card 1.",
+        "imageSrc": "assets/green_peas_bag_brand_nameFarmer_illustration.jpg"
+      },
+      {
+        "title": "coffee",
+        "text": "Some quick example text for card 2.",
+        "imageSrc": "assets/coffee_bags_brand_nameFarmer_illustration_p.jpg"
+      },
+      {
+          "title": "chickpea split",
+          "text": "Some quick example text for card 3.",
+          "imageSrc": "assets/chickpea_split_bags_brand_nameFarmer_illustr.jpg"
+        },
+        {
+          "title": "rice",
+          "text": "Some quick example text for card 4.",
+          "imageSrc": "assets/white_rice_bags_brand_nameFarmer_illustratio.jpg"
+        },     
+        
+        {
+            "title": "pulses",
+            "text": "Some quick example text for card 1.",
+            "imageSrc": "assets/pulses_bags_in_different_colours_brand_nameFar (2).jpg"
+          },
+          {
+            "title": "pickles",
+            "text": "Some quick example text for card 2.",
+            "imageSrc": "assets/pickles_bags_in_more_different_colours_brand_nam.jpg"
+          },
+          {
+              "title": "spices ",
+              "text": "Some quick example text for card 3.",
+              "imageSrc": "assets/spices_bags_in_more_different_colours_brand_name.jpg"
+            },
+            {
+              "title": "sunflower oil",
+              "text": "Some quick example text for card 4.",
+              "imageSrc": "assets/sunflower_oil_bottles_brand_nameFarmer_illus.jpg"
+            }
+
+]

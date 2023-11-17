@@ -1,88 +1,116 @@
-<div class="container mt-4" style="max-width:55rem;">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="shadow-lg p-4 mb-5 bg-body rounded">
-              <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
-                <div class="card-header shadow-lg">
-                    <h2 class="bg-dark p-2 mt-lg-1 text-center text-ligh">User Login</h2>
-                </div>
-              </div>  
-                <div class="card-body">
-                    <form action="login.php" method="post">
-                        <form action="/action_page.php" class="was-validated">
-                          <form [formGroup]="UserLoginForm" (ngSubmit)="OnSubmit()">
-                            <div class="form-outline mb-4">
-                              <input type="email" id="form2Example1" class="form-control" formControlName="email" />
-                              <label class="form-label" for="form2Example1">Email address</label>
-                              <div class="invalid-feedback">Please fill out this field.</div>
-                            </div>
-                          
-                            <!-- Password input -->
-                            <div class="form-outline mb-4">
-                              <input type="password" id="form2Example2" class="form-control" formControlName="password" minlength="8"/>
-                              <label class="form-label" for="form2Example2">Password</label>
-                              <div class="invalid-feedback">Please fill out this field.</div>
-                            </div>
-                          
-                            <!-- 2 column grid layout for inline styling -->
-                            <div class="row mb-4">
-                              <div class="col d-flex justify-content-center">
-                                <!-- Checkbox -->
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
-                                  <label class="form-check-label" for="form2Example34"> Remember me </label>
-                                  <div class="invalid-feedback">Check this checkbox to continue.</div>
+<section class="container nav">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+          <form class="d-flex">
+            <div>
+            <button class="btn btn-light" type="button">Signup</button>
+            </div>
+            <div>
+            <button class="btn btn-light logout" type="button">Logout</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+</section>
+<br><br><br><br> 
+<section class="container">
+  <div class="row">
+    <div class="col-md-5 ">
+     <img src="assets/2741840.jpg" class="img-fluid image">
+    </div>
+    <div class=" col-md-7 ">
+      <div class="container-fluid mt-4" style="max-width:55rem;">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="shadow-lg p-4 md-4 bg-body rounded-5">
+                  <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+                    <div class="card-header shadow-lg">
+                        <h2 class="bg-dark p-2 mt-lg-1 text-center text-ligh">User Login</h2>
+                    </div>
+                  </div>  
+                    <div class="card-body">
+                        <form action="login.php" method="post">
+                            <form action="/action_page.php" class="was-validated">
+                              <form [formGroup]="UserLoginForm" (ngSubmit)="OnSubmit()">
+                                <div class="form-outline mb-3">
+                                  <input type="email" id="form2Example1" class="form-control" formControlName="email" />
+                                  <label class="form-label" for="form2Example1">Email address</label>
+                                  <div class="invalid-feedback">Please fill out this field.</div>
                                 </div>
+                              
+                                <!-- Password input -->
+                                <div class="form-outline mb-3">
+                                  <input type="password" id="form2Example2" class="form-control" formControlName="password" minlength="8"/>
+                                  <label class="form-label" for="form2Example2">Password</label>
+                                  <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                              
+                                <!-- 2 column grid layout for inline styling -->
+                                <div class="row mb-3">
+                                  <div class="col d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
+                                      <label class="form-check-label text" for="form2Example34"> Remember me </label>
+                                      <div class="invalid-feedback">Check this checkbox to continue.</div>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="col">
+                                    <!-- Simple link -->
+                                    <a class="text-dark text" href=""[routerLink]="'/web/forgetpassword'" >Forgot password?</a>
+                                  </div>
+                                </div>
+                              
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-dark btn-block mb-4 center" [routerLink]="'/page1'">Sign in</button>
+                              </form>
+                              <!-- Register buttons -->
+                              <div class="text-center">
+                                 <p>Not a member? <a class="text-dark " [routerLink]="'/dashbord/view'" href="#!">Register</a></p>
                               </div>
-                          
-                              <div class="col">
-                                <!-- Simple link -->
-                                <a class="text-dark" href=""[routerLink]="'/web/forgetpassword'" >Forgot password?</a>
+                              <div class="text-center">
+                                <p>or sign up with:</p>
+                                <button type="button" class="btn btn-light btn-floating mx-1">
+                                  <img src="assets/icons8-github-25.png ">
+                                  <i class="fab fa-facebook-f"></i>
+                                </button>
+                            
+                                <button type="button" class="btn btn-light btn-floating mx-1">
+                                  <img src="assets/icons8-facebook-28.png">
+                                  <i class="fab fa-google"></i>
+                                </button>
+                            
+                                <button type="button" class="btn btn-light btn-floating mx-1">
+                                  <img src="assets/icons8-instagram-30.png">
+                                  <i class="fab fa-twitter"></i>
+                                </button>
+                            
+                                <button type="button" class="btn btn-light btn-floating mx-1">
+                                  <img src="assets/icons8-twitter-28.png">
+                                  <i class="fab fa-github"></i>
+                                </button>
                               </div>
-                            </div>
-                          
-                            <!-- Submit button -->
-                            <button type="submit" class="btn btn-dark btn-block mb-4" [routerLink]="'/page1'">Sign in</button>
-                          </form>
-                          <!-- Register buttons -->
-                          <div class="text-center">
-                             <p>Not a member? <a class="text-dark" [routerLink]="'/dashbord/view'" href="#!">Register</a></p>
-                          </div>
-                          <div class="text-center">
-                            <p>or sign up with:</p>
-                            <button type="button" class="btn btn-light btn-floating mx-1">
-                              <img src="assets/icons8-github-25.png ">
-                              <i class="fab fa-facebook-f"></i>
-                            </button>
-                        
-                            <button type="button" class="btn btn-light btn-floating mx-1">
-                              <img src="assets/icons8-facebook-28.png">
-                              <i class="fab fa-google"></i>
-                            </button>
-                        
-                            <button type="button" class="btn btn-light btn-floating mx-1">
-                              <img src="assets/icons8-instagram-30.png">
-                              <i class="fab fa-twitter"></i>
-                            </button>
-                        
-                            <button type="button" class="btn btn-light btn-floating mx-1">
-                              <img src="assets/icons8-twitter-28.png">
-                              <i class="fab fa-github"></i>
-                            </button>
-    
-                            <button type="button" class="btn btn-light btn-floating mx-1">
-                              <img src="assets/icons8-pinterest-25.png ">
-                              <i class="fab fa-github"></i>
-                            </button>
-                          </div>
-    
-                        </form> 
-                    </form>  
+        
+                            </form> 
+                        </form>  
+                    </div>
                 </div>
             </div>
         </div>
+      </div>
+
     </div>
+
   </div>
+
+</section>
 
 
 

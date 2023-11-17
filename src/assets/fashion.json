@@ -1,0 +1,66 @@
+[
+    {
+      "title": "Sherwani",
+      "text": "Some quick example text for card 1.",
+      "imageSrc": "assets/MLP_WeddingEdit_Sherwani_D_17-10-2023-14-40-1.webp"
+    },
+    {
+      "title": "Sherwani",
+      "text": "Some quick example text for card 2.",
+      "imageSrc": "assets/I00_UC100794_30-01-2019-07-47_283x395.avif"
+    },
+    {
+        "title": "Sherwani",
+        "text": "Some quick example text for card 3.",
+        "imageSrc": "assets/SDES820-325_02-09-2023-16-06_650x900.avif"
+      },
+      {
+        "title": "Sherwani",
+        "text": "Some quick example text for card 4.",
+        "imageSrc": "assets/I03_IMGL8023_16-02-2022-14-31_283x395.avif"
+      },
+
+
+      {
+        "title": "Pattu Saree",
+        "text": "Some quick example text for card 1.",
+        "imageSrc": "assets/stylish_traditional_sarees_for_ladies_3d_render (1).jpg"
+      },
+      {
+        "title": "Pattu Saree",
+        "text": "Some quick example text for card 2.",
+        "imageSrc": "assets/stylish_traditional_sarees_for_ladies_3d_render (2).jpg"
+      },
+      {
+          "title": "Pattu Saree",
+          "text": "Some quick example text for card 3.",
+          "imageSrc": "assets/stylish_traditional_sarees_for_ladies_3d_render (3).jpg"
+        },
+        {
+          "title": "Pattu Saree",
+          "text": "Some quick example text for card 4.",
+          "imageSrc": "assets/stylish_traditional_sarees_for_ladies_3d_render.jpg"
+        },     
+        
+        {
+            "title": "Sarees",
+            "text": "Some quick example text for card 1.",
+            "imageSrc": "assets/stylish_traditional_sarees_for_ladies_and_differ (1).jpg"
+          },
+          {
+            "title": "Sarees",
+            "text": "Some quick example text for card 2.",
+            "imageSrc": "assets/stylish_traditional_sarees_for_ladies_and_differ (2).jpg"
+          },
+          {
+              "title": "Sarees",
+              "text": "Some quick example text for card 3.",
+              "imageSrc": "assets/stylish_traditional_sarees_for_ladies_and_differ (3).jpg"
+            },
+            {
+              "title": "Sarees",
+              "text": "Some quick example text for card 4.",
+              "imageSrc": "assets/stylish_traditional_sarees_for_ladies_and_differ.jpg"
+            }
+
+]

@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto ">
+          <li class="nav-item">
+            <a class="nav-link"aria-current="page2"[routerLink]="'/page1'">Farmer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Agriculture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"aria-current="page2"[routerLink]="'/page4'">The Weaver</a>
+          </li>
+        </ul>
+        <i class="" style="font-size: 30px;" [routerLink]="'/favourite'"><img src="assets/icons8-flower-30.png"></i>
+        <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>
+        <i class="" style="font-size: 30px;"><img src="assets/icons8-shopping-cart-24.png"></i>
+        <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+
+  <ng-container *ngIf="product.length !=0">
+    <div class="container-fluid mt-5">
+              <div class="card-table table-responsive">
+                <div class="cart-product">
+                   <table class="table table-responsive table-bordered table-hover text-center text-capitalize">
+                      <thead>
+                         <tr class="table-dark text-light">
+                            <th>Sr.No</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr *ngFor="let card of product; let i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{card.title}}</td>
+                            <td><img class="img-fluid image6 rounded-5" src="{{card.imageSrc}}" alt="{{card.title}}"></td>
+                            <td>{{card.text}}</td>
+                            <td>{{card.price}}</td>
+                            <td>{{card.quantity}}</td>
+                            <td>
+                                <a class="btn btn-dark plase" (click)=addtocard(card)>Add To Bag</a> 
+                            </td>
+                            <td>
+                               <button class="btn btn-danger btn-rounded" (click)="removecard(card)">Delete</button>
+                            </td>
+                         </tr>
+                         <tr>
+                            <td colspan="4"></td>
+                            <td><button class="btn btn-danger btn-block btn-rounded " >EmptyCard</button></td>
+                            <td><button class="btn btn-secondary btn-block btn-rounded " [routerLink]="'/page10'">ShopMore</button></td>
+                            <td><button class="btn btn-success btn-block btn-rounded" >Checkout</button></td>
+                         </tr>
+                      </tbody>
+                   </table>
+                </div>
+             </div>
+    </div>
+        
+</ng-container>
+ 
+
+<ng-container *ngIf="product.length ==0">
+    <div class="container">
+        <div class="card shadow-lg rounded-5 card-sm">
+            <h5 class="card-title">My Favourites</h5>
+        
+        <div class="center">
+            <img src="assets/3d-casual-life-young-man-shopping-online.png"  alt="">
+            <h4>Your Favourites is Empty!</h4>
+            <h6>Add item to it now</h6>
+            <button [routerLink]="'/page10'" class="btn btn-dark">Show Now</button>
+    
+        </div>
+    
+      </div>
+    </div>
+</ng-container>

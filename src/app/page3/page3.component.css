@@ -1,78 +1,23 @@
-img{
-    width: 900px; /* Set the desired width */
-    height: 350px; /* Set the desired height */
-    border-radius: 1.5rem;
- }
- .img-fluids{
-    width: 1100px; /* Set the desired width */
-    height: 500px; /* Set the desired height */
-
- }
- 
- .animated-image {
-   animation: fade 3s linear infinite alternate;
-   opacity: 0;
- }
- 
- @keyframes fade {
-   0%, 100% {
-     opacity: 0;
-   }
-   50% {
-     opacity: 1;
-   }
- }
-
- .animated-images {
-   animation: fade 5s linear infinite alternate;
-   opacity: 0;
- }
- 
- @keyframes fade {
-   0%, 100% {
-     opacity: 0;
-   }
-   50% {
-     opacity: 1;
-   }
- }
- .animated-imagess {
-   animation: fade 10s linear infinite alternate;
-   opacity: 0;
- }
- 
- @keyframes fade {
-   0%, 100% {
-     opacity: 0;
-   }
-   50% {
-     opacity: 1;
-   }
- }
- .img{
-   animation-duration: 2s;
-   animation-name: slidein;
- }
- 
- @keyframes slidein {
-   from {
-     margin-left: 100%;
-     width: 300%;
-   }
- 
-   75% {
-     font-size: 300%;
-     margin-left: 25%;
-     width: 150%;
-   }
- 
-   to {
-     margin-left: 0%;
-     width: 100%;
-   }
- }
- @media (max-width: 600px) {
-  img{
+.img{
+  width: 900px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
+  
+}
+/* Define your custom animation 
+@keyframes zoomIn {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}*/
+/* Apply the animation to the image */
+#animated-image {
+  animation: zoomIn 2s ease-in-out;
+}
+@media (max-width: 600px) {
+  .img{
     width : auto;
     height: auto;
   }
@@ -87,9 +32,80 @@ img{
 .reveal.active{
   transform: translateY(0px);
   opacity: 1;
-
 }
+.logo{
+  width: 70px;
+  height: 30px;
+}
+.image9{
+  height: 200px;
+  width: 250px;
+  
+}
+.image10{
+  height: 200px;
+  width: 250px;
+}
+img{
+  width : auto;
+  height: auto;
+}
+@media (max-width: 600px) {
+  h1{
+   font-size: 10px;
+  }
+  p{
+   font-size: 6px;
+  }
+  h2{
+   font-size: 15px;
+  }
+  h5{
+   font-size: 10px;
+  }
+  h6{
+    font-size: 7px;
+   }
+  .i{
+   
+   margin-bottom: 5px;
+   width: auto;
+   height: auto;
  
- 
- 
- 
+  }
+  .icon{
+   width: 16px;
+   height: 16px;
+  }
+  .content{
+   margin-bottom: 10px;
+  }
+  .image9{
+    height: 60px;
+    width: 80px;
+  }
+  .image10{
+    height: 60px;
+    width: 80px;
+  }
+  .p{
+    font-size: 10px;
+  } 
+  h3{
+    font-size: 15px;
+  }
+ }
+ .logo3{
+  height: 200px;
+  width: 200px;
+ }
+ @media (max-width: 1000px) {
+  .image9{
+    height: 90px;
+    width: auto;
+  }
+  .image10{
+    height: 90px;
+    width: auto;
+  }
+ }

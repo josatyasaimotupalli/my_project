@@ -281,7 +281,7 @@ position: absolute;
   left: 0;
   pointer-events: none;
   background: radial-gradient(ellipse at center,rgba(0,0,0,0) 65%, rgba(0,0,0,0.7))
-}*/
+}
 @keyframes fade-in-up{
   0% {
       transform: scale(0);
@@ -291,7 +291,7 @@ position: absolute;
   }
 }
 
-/* Define the fade-in-up animation */
+/* Define the fade-in-up animation 
 @keyframes fade-in-up {
   from {
     margin-left: 100%;
@@ -303,16 +303,16 @@ position: absolute;
   }
 }
 
-/* Apply the fade-in-up animation to elements with id "animated-image" */
+/* Apply the fade-in-up animation to elements with id "animated-image" 
 #animated-image {
   animation-name: fade-in-up;
   animation-duration: 8s;
   animation-timing-function: ease-in-out;
 }
 
-/* Apply the fade-in-up animation to elements with class "framers" */
+/* Apply the fade-in-up animation to elements with class "framers" 
 .framers {
   animation: fade-in-up 10s;
-}
+}*/
 
 
