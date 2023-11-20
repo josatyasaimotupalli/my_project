@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-
+import { FormGroup,FormControl,Validators } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
   UserLoginForm:FormGroup
   constructor(){
     this.UserLoginForm=new FormGroup({
@@ -27,3 +25,5 @@ export class LoginComponent implements OnInit {
   
 
 }
+
+

@@ -1,10 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CardService {
+  [x: string]: any;
 
   public cardItemList : any =[]
   public productList = new BehaviorSubject<any>([]);
@@ -43,5 +45,6 @@ export class CardService {
     this.cardItemList=[]
     this.productList.next(this.cardItemList);
   }
+  
   
 }

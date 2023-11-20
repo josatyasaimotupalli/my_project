@@ -5,7 +5,7 @@ import { FormGroup,FormControl,Validators } from '@angular/forms';
   templateUrl: './forgetpassword.component.html',
   styleUrls: ['./forgetpassword.component.css']
 })
-export class ForgetpasswordComponent implements OnInit {
+export class ForgetpasswordComponent implements OnInit{
   UserForgetForm:FormGroup
   constructor(){
     this.UserForgetForm=new FormGroup({
@@ -23,3 +23,5 @@ export class ForgetpasswordComponent implements OnInit {
   }
 
 }
+
+

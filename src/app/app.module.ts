@@ -19,6 +19,10 @@ import { FilterPipe } from './filter.pipe';
 import { FavouriteComponent } from './favourite/favourite.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
+import { ActivatedRoute } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -38,6 +42,12 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     FilterPipe,
     FavouriteComponent,
     ProductDetailComponent,
+    LoginComponent,
+    ForgetpasswordComponent,
+    RegisterComponent,
+
+    
+  
   
    
     
@@ -51,7 +61,9 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+  
+   
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CardService } from '../service/card.service';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
@@ -14,7 +15,7 @@ export class ProductDetailComponent implements OnInit{
 
   cards: any[]=[];
 
-  constructor(private http: HttpClient,private cardservice: CardService ){}
+  constructor(private http: HttpClient,private cardservice: CardService,private ActivatedRoute:ActivatedRoute ){}
   ngOnInit(): void {
     this.http.get<any[]>('assets/page10.json').subscribe(data => {
       this.cards = data;
@@ -27,6 +28,8 @@ export class ProductDetailComponent implements OnInit{
       this.totalcard = res.length;
 
     });
+    let Id=this.ActivatedRoute.snapshot.paramMap.get('Id')
+    console.log(Id);
     
   }
 

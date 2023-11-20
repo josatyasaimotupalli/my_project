@@ -10,11 +10,12 @@ import { Page4Component } from './page4/page4.component';
 import { FashionComponent } from './fashion/fashion.component';
 import { FavouriteComponent } from './favourite/favourite.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path: "", redirectTo:'/web/login',pathMatch:'full'},
-  {path:'web', loadChildren:()=>import('./web/web.module').then(mod=>mod.WebModule)},
-  {path:'dashbord',loadChildren:()=>import('./user-dashbord/user-dashbord.module').then(mod=>mod.UserDashbordModule)},
+  {path: "", redirectTo:'/login',pathMatch:'full'},
   {path:'page1',component:Page1Component},
   {path:'page2',component:Page2Component},
   {path:'page3',component:Page3Component},
@@ -24,7 +25,12 @@ const routes: Routes = [
   {path:'page4',component:Page4Component},
   {path:'fashion',component:FashionComponent},
   {path:'favourite',component:FavouriteComponent},
-  {path:'product-detail',component:ProductDetailComponent}
+  {path:'product-detail',component:ProductDetailComponent},
+  {path:'login',component:LoginComponent},
+  {path:'forgetpassword',component:ForgetpasswordComponent},
+  {path:'register',component:RegisterComponent}
+
+
 
 
 ];
