@@ -1,7 +1,7 @@
 <section class="container nav">
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
+        <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent (1).png"class="logo" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -14,16 +14,25 @@
               <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Groceries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"aria-current="page2"[routerLink]="'/page3'">Aquaculture</a>
+              <a class="nav-link"aria-current="page2"[routerLink]="'/nursery'">Nursery Plants</a>
             </li>
             <li class="nav-item">
               <a class="nav-link"aria-current="page2"[routerLink]="'/page4'">The Weaver</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/contact'">Contact Us</a>
+            </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary" type="button">Search</button>
-          </form>
+          <i class="" style="font-size: 30px;" [routerLink]="'/favourite'"><img src="assets/icons8-flower-30 (3).png"></i>
+          <div style="font-size: 9px;" class="badge bg-danger Search">{{favourite}}</div>&nbsp;&nbsp;&nbsp;
+          <i class="" style="font-size: 30px;" [routerLink]="'/card'"><img src="assets/icons8-shopping-cart-24.png"></i>
+            <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>
+            &nbsp;&nbsp;&nbsp;
+            <form class="d-flex">
+              <div>
+              <button class="btn btn-light rounded-pill "[routerLink]="'/logout'" type="button">Logout</button>
+              </div>
+            </form>
         </div>
       </div>
     </nav>
@@ -82,9 +91,8 @@
 </div>
 <br>
 <div class="text-center reveal">
-    <h1>Grow your farming business online</h1>
-    <br>
-    <p>“Josatyasai helped me create a beautiful website for my farming business. I received inquiries from farmers within days.”</p>
+    <h1>Welcome to Farmer: Nourishing Communities with Freshness</h1>
+    <p>At Farmer, we bring the fields to your table. Our dedication to quality, sustainability, and the livelihood of local farmers defines our mission.</p>
 </div>
 
 <br>
@@ -99,11 +107,11 @@
 
       <!-- Content Column -->
       <div class="col-6 col-md-6">
-        <h1>Showcase your farming services</h1>
-        <p>FarmPage allows you to showcase your farming services and attract potential customers. Create a stunning landing page that highlights your expertise.</p>
+        <h1>Farm-to-Table Excellence</h1>
+        <p>Experience the essence of freshness with our curated selection of farm-to-table delights. From handpicked fruits to organically grown vegetables, we connect you directly with local farmers to ensure the highest quality produce reaches your kitchen.</p>
         <br>
-        <h2>What do you mean by farmer?</h2>
-         <p>A farmer is a person who runs and works on a farm. Some farmers raise a variety of food crops, while others keep dairy cows and sell their milk. Farmers work in some aspect of agriculture, growing vegetables, grains, or fruit; or raising animals for milk, eggs, or meat.</p>
+        <h2> Supporting Local Agriculture</h2>
+         <p>Farmer isn't just a platform; it's a movement to support local agriculture. By choosing Farmer, you contribute to the sustainability of local farms, helping communities thrive while enjoying the freshest, tastiest products available.</p>
         <!-- Add your content here -->
       </div>
     </div>
@@ -120,10 +128,12 @@
     <div class="row">
       <!-- Image Column -->
       <div class="col-6 col-md-6">
-       <h1>Connect with farmers</h1>
-       <p>Connect with farmers and build relationships through your landing page. Farmer makes it easy for farmers to reach out to you and inquire about your services.</p>
-       <h2>Expand your client base</h2>
-       <p>With Farmer, you can expand your client base by reaching farmers who are looking for your services. Grow your farming business online with confidence.</p>
+       <h1>Harvested with Care</h1>
+       <p>Every product is a testament to the meticulous care of our local farmers, ensuring you receive the freshest and most vibrant ingredients.</p>
+       <h2>Sustainability at Heart</h2>
+       <p>We're committed to sustainability, offering you a guilt-free indulgence with our range of eco-friendly and organic choices.</p>
+       <h3>Empowering Communities</h3>
+       <p>Your purchase isn't just a transaction; it's a gesture that empowers local farmers and sustains the heartbeat of communities.</p>
       </div>
 
       <!-- Content Column -->
@@ -189,9 +199,10 @@
 <br>
 
   <div class="container-fluid p-5 text-light text-center shadow-lg p-0 mb-5 rounded-5  bg-dark rounde">
-    <h1>Join our community of farmer</h1>
-    <p> “Agriculture is the most healthful, most useful, and most noble employment of man.”</p> 
+    <h1>Join the Farmer Community</h1>
+    <p>As a Farmer member, you're not just a customer; you're part of a community passionate about good food. Enjoy exclusive access to culinary events, workshops, and tastings, connecting with fellow food enthusiasts</p> 
   </div>  
+  
   <section class="content">
     <!-- Footer -->
   <footer class="text-center text-lg-start text-light bg-dark text-muted shadow-lg rounded-top-5">
@@ -231,7 +242,7 @@
           <div class="col-3 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
             <!-- Content -->
             <h5 class="text-uppercase mb-4">
-              <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/icons8-leaf-20 (1).png"></i>Farmer
+              <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/farmer-high-resolution-logo-white-transparent.png" class="logo"></i>
             </h5>
             <p>
               “Agriculture is the most healthful, most useful, and most noble employment of man.”

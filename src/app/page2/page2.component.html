@@ -1,7 +1,7 @@
 <section class="container nav">
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
+        <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent (1).png"class="logo" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -10,20 +10,32 @@
             <li class="nav-item">
               <a class="nav-link"aria-current="page2"[routerLink]="'/page1'">Farmer</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Groceries</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"aria-current="page2"[routerLink]="'/page2'" role="button" data-bs-toggle="dropdown">Groceries</a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item bg-dark text-light" [routerLink]="'/page10'">Farmer Store</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link"aria-current="page2"[routerLink]="'/page3'">Aquaculture</a>
+              <a class="nav-link"aria-current="page2"[routerLink]="'/nursery'">Nursery Plants</a>
             </li>
             <li class="nav-item">
               <a class="nav-link"aria-current="page2"[routerLink]="'/page4'">The Weaver</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/contact'">Contact Us</a>
+            </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary" type="button">Search</button>
-          </form>
+            <i class="" style="font-size: 30px;" [routerLink]="'/favourite'"><img src="assets/icons8-flower-30 (3).png"></i>
+            <div style="font-size: 9px;" class="badge bg-danger Search">{{favourite}}</div>&nbsp;&nbsp;&nbsp;
+            <i class="" style="font-size: 30px;" [routerLink]="'/card'"><img src="assets/icons8-shopping-cart-24.png"></i>
+            <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>
+            &nbsp;&nbsp;&nbsp;
+            <form class="d-flex">
+              <div>
+              <button class="btn btn-light rounded-pill "[routerLink]="'/logout'" type="button">Logout</button>
+              </div>
+            </form>
         </div>
       </div>
     </nav>
@@ -38,17 +50,10 @@
       </div>
     </div>
   </div>
-  <div class="text-center b">
-    <button class="btn btn-outline-dark btn-lg  btn-rounded"  [routerLink]="'/page10'">Farmer Store</button>
-  </div>
   <br>
   <div class="text-center">
-      <h1>MAJOR CROPS OF INDIA</h1>
-      <p>India grows almost each and every crop. Can you think why? If we consider the
-        varieties of crop grown from Kashmir to Kanyakumari and western coast of Gujarat
-        to extreme north eastern states of Arunachal Pradesh, there would be hundreds of
-        crops. We group all these crops into four broad types. Let us discuss the main crops
-        under each type in detail:</p>
+      <h1>Meet Your Local Pulse Purveyor: A Seller's Commitment</h1>
+      <p>At the heart of our pulse paradise is a passionate seller dedicated to bringing you the very best in nutrition, flavor, and quality. Let us introduce you to the driving force behind the pulses you love.</p>
   </div>
   
   <br>
@@ -57,26 +62,25 @@
         <!-- Image Column -->
         <div class="col-6 col-md-6">
           <div class="">
-          <img src="assets/r-s-sagar-qjFjOfboWOA-unsplash (1).jpg" alt="Your Image" class="img-fluid img shadow-lg p-0 mb-5 bg-body rounded-5">
+          <img src="assets/2778410.jpg" alt="Your Image" class="img-fluid img ">
           </div>
         </div>
   
         <!-- Content Column -->
         <div class="col-6 col-md-6">
-          <h2>Food grains</h2>
-          <h6>Crops that are
-            used for human
-            consumption</h6>
-          <br>
-          <h2>Major Crops</h2>
-           <h6>Grain is the harvested seed of grasses such as wheat, oats, rice, and corn. Other important grains include sorghum, millet, rye, and barley. Around the globe, grains, also called cereals, are the most important staple food. Humans get an average of 48 percent of their calories, or food energy, from grains</h6>
+          <h2> Nutrient-Rich Lentils</h2>
+          <p>From hearty green lentils to delicate red lentils, our collection offers a spectrum of flavors and textures to enhance your soups, stews, and salads.</p>
+          <h3>Wholesome Chickpeas</h3>
+           <p>Dive into the versatility of chickpeas – perfect for hummus, curries, or roasting for a healthy snack. Discover different varieties to suit your culinary needs.</p>
+           <h4>Fiber-Packed Beans</h4>
+           <p>Whether it's black beans, kidney beans, or navy beans, our selection is a treasure trove of fiber-rich options to add substance and nutrition to your meals.</p>
           <!-- Add your content here -->
         </div>
       </div>
     </div>
-    <div class="text-center">
-      <h1></h1>
-      <p></p>
+    <br>
+    <div class="text-center reveal">
+      <h3>Pulses Excellence, Redefined</h3>
     </div>
     <br>
   
@@ -84,44 +88,43 @@
       <div class="row">
         <!-- Image Column -->
         <div class="col-6 col-md-6">
-         <h2>Commercial Crops</h2>
-         <h6>Crops which are grown
-            for sale either in raw form
-            or in semi-processed form</h6>
-         <h2>Major Crops</h2>
-         <h6>Crops which are very benefits and return the desired products for farmers which is grown for sale to return a profit are known as commercial crops. Examples are cotton, sugarcane, jute, ramie etc. The most important commercial crop of India is Sugarcane . India has the largest area under sugarcane cultivation in the world.</h6>
+         <h2> Premium Quality</h2>
+         <p>We source our pulses directly from trusted farmers, ensuring that every pack delivers the highest quality and freshness to your kitchen.</p>
+         <h3>Organic Choices</h3>
+         <p>Choose from our range of organic pulses, grown with care and without synthetic pesticides. Prioritize your health and the well-being of the planet.</p>
+         <h4> Cooking Inspiration</h4>
+         <p>Elevate your cooking with our curated recipes and cooking tips. Transform ordinary meals into extraordinary culinary experiences with Farmer's Market pulses.</p>
+         
         </div>
   
         <!-- Content Column -->
         <div class="col-6 col-md-6">
           <div class="">
-              <img src="assets/victoria-priessnitz-IPuuhSmsFIc-unsplash.jpg" alt="Your Image" class="img-fluid shadow-lg p-0 mb-5 bg-body img rounded-5">
+              <img src="assets/4072378.jpg" alt="Your Image" class="img-fluid img">
               </div>
         </div>
       </div>
     </div>
     <br>
-  
+    <div class="text-center reveal">
+      <h3>Easy Ordering, Fresh Deliveries</h3>
+    </div>
+    <br>
     <div class="container reveal">
         <div class="row">
           <!-- Image Column -->
           <div class="col-6 col-md-6">
-            <div class="">
-            <img src="assets/timothy-newman-_ZH-GRbh0iE-unsplash.jpg" alt="Your Image" class="img-fluid shadow-lg p-0 mb-5 bg-body img rounded-5">
+            <div class="text-center">
+            <img src="assets/6250704.jpg" alt="Your Image" class="img-fluid img1">
             </div>
           </div>
     
           <!-- Content Column -->
           <div class="col-6 col-md-6">
-            <h2>Plantation Crops</h2>
-            <h6>Crops which are grown
-                on Plantations covering
-                large estates</h6>
-            <br>
-            <h2>Major Crops</h2>
-             <h6>Plantation crops are perennial crops that are grown on a large scale by an individual or a company.
-                For example, rubber, tea, coffee, oil palm, coconut, etc. They are also known as cash crops.
-                </h6>
+            <h2>Effortless Shopping</h2>
+            <p>Navigate our user-friendly website and effortlessly fill your cart with the best pulses. The simplicity of online shopping meets the excellence of our products.</p>
+            <h3> Doorstep Delivery</h3>
+             <p>Enjoy the convenience of doorstep delivery. Your pulses are carefully packed and delivered promptly to ensure you experience freshness with every order.</p>
             <!-- Add your content here -->
           </div>
         </div>
@@ -186,7 +189,7 @@
     <img src="assets/3702077.jpg" alt="logo" class="logo3 img-fluid">
   </div>
   <div class="col-6 col-sm-6">
-      <button class="btn btn-outline-dark btn-lg  btn-rounded center" style="margin-top: 70px; margin-left: 20px;" [routerLink]="'/page10'">Farmer Store</button>
+      <button class="btn btn-dark btn-lg center" style="margin-top: 70px; margin-left: 20px;" [routerLink]="'/page10'">Farmer Store</button>
   </div>
 </div>
 <br>
@@ -229,7 +232,7 @@
         <div class="col-3 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
           <!-- Content -->
           <h5 class="text-uppercase mb-4">
-            <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/icons8-leaf-20 (1).png"></i>Farmer
+            <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/farmer-high-resolution-logo-white-transparent.png" class="logo"></i>
           </h5>
           <p>
             “Agriculture is the most healthful, most useful, and most noble employment of man.”

@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
+      <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent (1).png"class="logo" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -11,82 +11,159 @@
             <a class="nav-link"aria-current="page2"[routerLink]="'/page1'">Farmer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Agriculture</a>
+            <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Groceries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"aria-current="page2"[routerLink]="'/nursery'">Nursery Plants</a>
           </li>
           <li class="nav-item">
             <a class="nav-link"aria-current="page2"[routerLink]="'/page4'">The Weaver</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link"aria-current="page2"[routerLink]="'/contact'">Contact Us</a>
+          </li>
         </ul>
         <i class="" style="font-size: 30px;"><img src="assets/icons8-shopping-cart-24.png"></i>
-        <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>
+        <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>&nbsp;&nbsp;
         <form class="d-flex">
           <input class="form-control me-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary" type="button">Search</button>
+          <button class="btn btn-secondary rounded-pill " type="button">Search</button>
         </form>
       </div>
     </div>
   </nav>
-  <br><br>
+  <br><br><br><br>
 
-  <ng-container *ngIf="product.length !=0">
-    <div class="container-fluid mt-5">
-              <div class="card-table table-responsive">
-                <div class="cart-product">
-                   <table class="table table-responsive table-bordered table-hover text-center text-capitalize">
-                      <thead>
-                         <tr class="table-dark text-light">
-                            <th>Sr.No</th>
-                            <th>Product Name</th>
-                            <th>Product Image</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                            <th>Action</th>
-                         </tr>
-                      </thead>
-                      <tbody>
-                         <tr *ngFor="let card of product; let i = index">
-                            <td>{{i+1}}</td>
-                            <td>{{card.title}}</td>
-                            <td><img class="img-fluid image6 rounded-5" src="{{card.imageSrc}}" alt="{{card.title}}"></td>
-                            <td>{{card.text}}</td>
-                            <td>{{card.price}}</td>
-                            <td>{{card.quantity}}</td>
-                            <td>{{card.total}}</td>
-                            <td>
-                               <button class="btn btn-danger btn-rounded" (click)="removecard(card)">Delete</button>
-                            </td>
-                         </tr>
-                         <tr>
-                            <td colspan="4"></td>
-                            <td><button class="btn btn-danger btn-block btn-rounded " >EmptyCard</button></td>
-                            <td><button class="btn btn-secondary btn-block btn-rounded " [routerLink]="'/page10'">ShopMore</button></td>
-                            <td><button class="btn btn-success btn-block btn-rounded" >Checkout</button></td>
-                         </tr>
-                      </tbody>
-                   </table>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Product Column -->
+      <div class="col-md-9 scrollable-column container">
+        <ng-container *ngIf="product.length !== 0">
+          <div
+            class="container my-4 max-w-4xl md:my-6"
+            *ngFor="let card of product; let i = index"
+          >
+            <div class="card overflow-hidden rounded-5 shadow h-auto cart">
+              <div class="row g-0">
+                <div class="col-md-8 bg-light px-5 py-4">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-1 align-items-center">
+                      <div class="flex-shrink-0">
+  
+                        <img
+                          class="img-fluid image6 rounded-pill"
+                          [src]="card.imageSrc"
+                          [alt]="card.title"
+                        />
+                      </div>
+                      <div class="ms-4">
+                        <p class="text-sm font-bold">{{ card.title }}</p>
+                        <p class="mt-1 text-sm text-gray-500">{{ card.text }}</p>
+                        <div class="star-rating h5">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fa fa-star-o"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="mt-4 text-xs font-medium">x 1</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4" />
                 </div>
-             </div>
-    </div>
-        
-</ng-container>
- 
+                <div class="col-md-4">
+                  <div class="ms-auto d-flex flex-column justify-content-between">
+                    <div class="container text-center ">
+                      <img
+                        src="assets/farmer-high-resolution-logo-transparent (1).png"
+                        class="img-fluid text-center "style="margin-top:10px;width: 200px; opacity: 0.2;
+                        "
+                        alt=""
+                      />
+                    </div>
+                    <h2
+                      class="text-center text-md font-bold text-muted"
+                      style="margin-top:20px"
+                    >
+                      Price : {{ card.price }}
+                    </h2>
+                    <br />
+                    <div class="row container ">
+                      <div class="col text-center d-grid gap-2">
+                        <i class="btn btn-light  btn-sm rounded-5 shadow-lg " (click)="removecard(card)" style="font-size: 24px;"><img src="assets/icons8-delete-25.png"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-container>
 
-<ng-container *ngIf="product.length ==0">
-    <div class="container">
-        <div class="card shadow-lg rounded-5 card-sm">
-            <h5 class="card-title">My Card</h5>
-        
-        <div class="center">
-            <img src="assets/3d-casual-life-young-man-shopping-online.png"  alt="">
-            <h4>Your cart is Empty!</h4>
-            <h6>Add item to it now</h6>
-            <button [routerLink]="'/page10'" class="btn btn-dark">Show Now</button>
-    
+        <ng-container *ngIf="product.length ==0">
+          <div class="container">
+              <div class="card shadow-lg rounded-5 card-sm">
+                  <h5 class="card-title">My Card</h5>
+              
+              <div class="center">
+                  <img src="assets/2203570.jpg"  alt="">
+                  <h4>Your cart is Empty!</h4>
+                  <h6>Add item to it now</h6>
+                  <button [routerLink]="'/page10'" class="btn btn-dark">Show Now</button>
+          
+              </div>
+          
+            </div>
+          </div>
+      </ng-container>
+      </div>
+  <br><br><br>
+      <!-- Fixed Column -->
+      <div class="col-md-3 fixed-column">
+        <h4 class="bg-black text-light text-center fw-300 rounded-5 shadow-lg  ">PRICE DETAILS</h4>
+        <br />
+        <div class="row container-fluid">
+          <div class="col-sm-6">
+            <h6 class="m-b-10 f-w-600">Total MRP</h6>
+          </div>
+          <div class="col-sm-6">
+            <p class="m-b-10 f-w-600">₹6000</p>
+          </div>
+          <div class="col-sm-6">
+            <h6 class="text-muted f-w-400">Shipping Fee</h6>
+          </div>
+          <div class="col-sm-6">
+            <p class="f-w-400 text-success">₹100</p>
+          </div>
         </div>
-    
+        <div class="row container-fluid">
+          <div class="col-sm-6">
+            <h6 class="m-b-10 f-w-600 text-muted">Total</h6>
+          </div>
+          <div class="col-sm-6">
+            <h6 class="text-muted f-w-400">₹4500</h6>
+          </div>
+        </div>
+        <br /><br />
+        <!-- Submit button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-secondary rounded-pill " [routerLink]="'/checkout'">
+            <span>PLACE ORDER</span>
+          </button>
+        </div>
       </div>
     </div>
-</ng-container>
-
+  </div>

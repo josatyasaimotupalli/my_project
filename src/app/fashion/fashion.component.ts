@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CardService } from '../service/card.service';
+import { NgToastService } from 'ng-angular-popup';
+import { FavouriteService } from '../service/favourite.service';
 
 @Component({
   selector: 'app-fashion',
@@ -10,13 +12,13 @@ import { CardService } from '../service/card.service';
 export class FashionComponent implements OnInit {
   public productList : any ;
   public totalcard : number = 0;
-  
+  public favourite: number= 0;
   searchKey:string ="";
   public searchTerm : string = '';
 
   cards: any[]=[];
 
-  constructor(private http: HttpClient,private cardservice: CardService ) {}
+  constructor(private http: HttpClient,private cardservice: CardService,private toast:NgToastService ,private FavouriteService:FavouriteService) {}
   ngOnInit(): void {
     
     this.http.get<any[]>('assets/fashion.json').subscribe(data => {
@@ -35,6 +37,12 @@ export class FashionComponent implements OnInit {
     this.cardservice.search.subscribe(val=>{
       this.searchKey = val;
     });
+  
+    this.FavouriteService.getProducts()
+    .subscribe(res=>{
+      this.favourite = res.length;
+
+    })
     
   }
   
@@ -48,7 +56,19 @@ export class FashionComponent implements OnInit {
     console.log(this.searchTerm)
     this.cardservice.search.next(this.searchTerm);
   }
-  
- 
 
+ 
+  bottomLeft(){
+    this.toast.success({detail:'successfully',summary:'added items in cart',duration:1000});
+  }
+
+  Favouritetocard(card:any){
+    this.FavouriteService.favouritetocard(card);
+
+
+  }
+  fashionLeft(){
+    this.toast.info
+    ({detail:'successfully',summary:'added items in favourites',position: 'bottomRight', duration:1000});
+  }
 }

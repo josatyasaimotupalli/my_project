@@ -1,0 +1,287 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)"
+      ><img
+        src="assets/farmer-high-resolution-logo-transparent (1).png"
+        class="logo"
+        alt=""
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mynavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page2" [routerLink]="'/page1'"
+            >Farmer</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page2" [routerLink]="'/page2'"
+            >Groceries</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page2" [routerLink]="'/nursery'"
+            >Nursery Plants</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page2" [routerLink]="'/page4'"
+            >The Weaver</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page2" [routerLink]="'/contact'"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <i class="" style="font-size: 30px" [routerLink]="'/favourite'"
+        ><img src="assets/icons8-flower-30 (3).png"
+      /></i>
+      <div style="font-size: 9px" class="badge bg-danger Search">
+        {{ favourite }}
+      </div>
+      &nbsp;&nbsp;&nbsp;
+      <i class="" style="font-size: 30px" [routerLink]="'/card'"
+        ><img src="assets/icons8-shopping-cart-24.png"
+      /></i>
+      <div style="font-size: 9px" class="badge bg-danger Search">
+        {{ totalcard }}
+      </div>
+      &nbsp;&nbsp;
+      <form class="d-flex">
+        <input
+          class="form-control me-2 input"
+          [(ngModel)]="searchTerm"
+          (keyup)="search($event)"
+          type="text"
+          placeholder="Search"
+        />
+        <img src="assets/icons8-search-50.png" class="icon1" />
+      </form>
+    </div>
+  </div>
+</nav>
+<br /><br />
+<div class="">
+  <img
+    src="assets/6990810.jpg"
+    alt="Your Image"
+    class="img-fluid shadow-lg bg-body rounded-bottom-5 image3"
+  />
+  <div class="centered"><h1 class="text-center text-light fw-bold"></h1></div>
+</div>
+<br /><br /><br />
+<section class="container">
+  <div class="row">
+    <div
+      class="col-6 col-lg-3 col-md-4 col-sm-4"
+      *ngFor="let card of cards | filter : searchKey : 'title'"
+    >
+      <div class="card shadow-lg rounded-5" style="height: 22rem">
+        <img
+          routerLink="/product-detail"
+          [src]="card.imageSrc"
+          class="card-img-top shadow-lg rounded-5 image6"
+          alt="..."
+        />
+        <div class="card-body text-center md-1">
+          <h5 class="card-title h5">{{ card.title }}</h5>
+          <p class="card-text">{{ card.text }}</p>
+          <div class="star-rating">
+            <ul class="list-inline h5">
+              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+            </ul>
+          </div>
+          <div class="text-center">
+            <h6 class="item-price">
+              <span>Price :</span
+              ><span
+                class="text-decoration-line-through text-start fw-light text-danger"
+                >₹ 600</span
+              >
+              <span>₹ 330.00</span>
+            </h6>
+          </div>
+          <!--<a  class="btn btn-dark">Buy Now</a>-->
+          <a
+            class="btn btn-dark plase rounded-pill"
+            (click)="bottomLeft()"
+            (click)="addtocard(card)"
+            >Add To Bag</a
+          >
+          <a
+            class="btn btn-light plases rounded-pill btn-sm"
+            (click)="Favouritetocard(card)"
+            ><img src="assets/icons8-flower-30 (4).png"
+          /></a>
+        </div>
+      </div>
+      <br /><br />
+    </div>
+  </div>
+</section>
+<br />
+<section class="content">
+  <!-- Footer -->
+  <footer
+    class="text-center text-lg-start text-light bg-dark text-muted shadow-lg rounded-top-5"
+  >
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block text-white">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div class="">
+        <a href="" class="me-4 link-secondary">
+          <i class="" style="font-size: 24px" [routerLink]="'/card'"
+            ><img src="assets/icons8-facebook-f-24.png"
+          /></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="" style="font-size: 24px" [routerLink]="'/card'"
+            ><img src="assets/icons8-instagram-25.png"
+          /></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="" style="font-size: 24px" [routerLink]="'/card'"
+            ><img src="assets/icons8-linkedin-25.png"
+          /></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="" style="font-size: 24px" [routerLink]="'/card'"
+            ><img src="assets/icons8-twitter-25 (1).png"
+          /></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5 text-white">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-3 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h5 class="text-uppercase mb-4">
+              <i class="" style="margin-right: 10px" [routerLink]="'/card'"
+                ><img
+                  src="assets/farmer-high-resolution-logo-white-transparent.png"
+                  class="logo"
+              /></i>
+            </h5>
+            <p>
+              “Agriculture is the most healthful, most useful, and most noble
+              employment of man.”
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-3 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h5 class="text-uppercase mb-4">Product</h5>
+            <p>
+              <a href="#!" class="text-reset">Rice</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Coffee</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Spices</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Pulsees</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-3 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h5 class="text-uppercase mb-4">Useful links</h5>
+            <p>
+              <a href="" class="text-reset">Farmer</a>
+            </p>
+            <p>
+              <a href="" class="text-reset">Agirculture</a>
+            </p>
+            <p>
+              <a href="" class="text-reset">Aquaculture</a>
+            </p>
+            <p>
+              <a href="" class="text-reset">The Weaver</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-3 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h5 class="text-uppercase mb-4">Contact</h5>
+            <p>
+              <i class="i" [routerLink]="'/card'"
+                ><img src="assets/icons8-homeadvisor-24.png" class="icon"
+              /></i>
+              2-134,cinima veedhi,G.vemavaram,East Godavari,Andhra
+              Pradesh-533464
+            </p>
+            <p>
+              <i class="img" [routerLink]="'/card'"
+                ><img src="assets/icons8-gmail-24.png" class="icon"
+              /></i>
+              Farmer@gmail.com
+            </p>
+            <p>
+              <i class="i" [routerLink]="'/card'"
+                ><img src="assets/icons8-phone-24.png" class="icon"
+              /></i>
+              +91 93478 77756
+            </p>
+            <p>
+              <i class="i" [routerLink]="'/card'"
+                ><img src="assets/icons8-phone-24 (1).png" class="icon" /></i
+              >+91 96667 54367
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+      class="text-center text-light p-4"
+      style="background-color: rgba(239, 233, 233, 0.025)"
+    >
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+        >Farmer.com</a
+      >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>

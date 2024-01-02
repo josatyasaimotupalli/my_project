@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
+    <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent (1).png"class="logo" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,17 +10,25 @@
         <li class="nav-item">
           <a class="nav-link"aria-current="page2"[routerLink]="'/page1'">Farmer</a>
         </li>
+        <li class="nav-item ">
+          <a class="nav-link "aria-current="page2"[routerLink]="'/page2'" >Groceries</a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Groceries</a>
+          <a class="nav-link"aria-current="page2"[routerLink]="'/nursery'">Nursery Plants</a>
         </li>
         <li class="nav-item">
           <a class="nav-link"aria-current="page2"[routerLink]="'/page4'">The Weaver</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link"aria-current="page2"[routerLink]="'/contact'">Contact Us</a>
+        </li>
       </ul>
+      <i class="" style="font-size: 30px;" [routerLink]="'/favourite'"><img src="assets/icons8-flower-30 (3).png"></i>
+      <div style="font-size: 9px;" class="badge bg-danger Search">{{favourite}}</div>&nbsp;&nbsp;&nbsp;
       <i class="" style="font-size: 30px;" [routerLink]="'/card'"><img src="assets/icons8-shopping-cart-24.png"></i>
-      <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>
+      <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>&nbsp;&nbsp;
       <form class="d-flex">
-        <input class="form-control me-2" [(ngModel)]="searchTerm"(keyup)="search($event)" type="text" placeholder="Search">
+        <input class="form-control me-2 input" [(ngModel)]="searchTerm"(keyup)="search($event)" type="text" placeholder="Search">
         <img src="assets/icons8-search-50.png"  class="icon1">
         
       </form>
@@ -35,14 +43,30 @@
 <br><br><br>
 <section class="container">
   <div class="row">
-    <div class="col-4 col-lg-3 col-md-4 col-sm-4 " *ngFor="let card of cards | filter:searchKey:'title'">
-      <div class="card shadow-lg rounded-5">
+    <div class="col-6 col-lg-3 col-md-4 col-sm-4 " *ngFor="let card of cards | filter:searchKey:'title'">
+      <div class="card shadow-lg rounded-5"style="height:22rem;">
         <img routerLink="/product-detail" [src]="card.imageSrc" class="card-img-top shadow-lg rounded-5 image6" alt="...">
-        <div class="card-body text-center md-1">
-          <h5 class="card-title h5">{{ card.title }}</h5>
-          <p class="card-text p">{{ card.text }}</p>
+        <div class="card-body text-center md-3 padding">
+
+          <h5 class="card-title">{{ card.title }}</h5>
+          <div><p class="card-text">{{ card.text }}</p></div>
+          <div class="star-rating">
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star"></i></li>
+              <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+            </ul>
+          </div>
+            <div class=" text-center">
+              <h6 class="item-price "><span>Price :</span><span class="text-decoration-line-through text-start fw-light text-danger">₹ 600</span> <span>₹ 330.00</span></h6>
+            </div>
+        <div class="">
           <!--<a  class="btn btn-dark">Buy Now</a>-->
-          <a class="btn btn-dark plase" (click)=addtocard(card)>Add To Bag</a>
+          <a class="btn btn-dark plase btn-md rounded-pill "(click)="bottomLeft()" (click)=addtocard(card)>Add To Bag</a>
+          <a class="btn btn-light btn-sm plases rounded-pill "(click)=Favouritetocard(card) ><img src="assets/icons8-flower-30 (4).png" class="flower"></a>
+        </div>
         </div>
       </div>
       <br><br>
@@ -89,7 +113,7 @@
         <div class="col-3 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
           <!-- Content -->
           <h5 class="text-uppercase mb-4">
-            <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/icons8-leaf-20 (1).png"></i>Farmer
+            <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/farmer-high-resolution-logo-white-transparent.png" class="logo"></i>
           </h5>
           <p>
             “Agriculture is the most healthful, most useful, and most noble employment of man.”

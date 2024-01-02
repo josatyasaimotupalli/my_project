@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FavouriteService } from '../service/favourite.service';
+import { CardComponent } from '../card/card.component';
 import { CardService } from '../service/card.service';
-
 @Component({
   selector: 'app-favourite',
   templateUrl: './favourite.component.html',
@@ -14,13 +15,18 @@ export class FavouriteComponent implements OnInit{
   
 
 
-  constructor(private cardservice:CardService){}
-
+  constructor(private FavouriteService:FavouriteService ,private cardservice:CardService){}
   ngOnInit(): void {
-    this.cardservice.getProducts()
+    this.FavouriteService.getProducts()
     .subscribe(res=>{
       this.product=res;
-      this.grandTotal = this.cardservice.getTotalPrice();
+      this.grandTotal = this.FavouriteService.getTotalPrice();
+    })
+  
+    this.FavouriteService.getProducts()
+    .subscribe(res=>{
+      this.favourite = res.length;
+
     })
     this.cardservice.getProducts()
     .subscribe(res=>{
@@ -31,10 +37,15 @@ export class FavouriteComponent implements OnInit{
     
   }
   removecard(card:any){
-    this.cardservice.removeCarItem(card);
+    this.FavouriteService.removeCarItem(card);
   }
   emptycard(card:any){
-    this.cardservice.removeAllcard();
+    this.FavouriteService.removeAllcard();
+  }
+  Favouritetocard(card:any){
+    this.FavouriteService.favouritetocard(card);
+
+
   }
   addtocard(card:any){
     this.cardservice.addtocard(card);

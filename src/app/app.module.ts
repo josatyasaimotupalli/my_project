@@ -23,6 +23,12 @@ import { ActivatedRoute } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
 import { RegisterComponent } from './register/register.component';
+import { LogoutComponent } from './logout/logout.component';
+import { NgToastModule } from 'ng-angular-popup';
+import { ContactComponent } from './contact/contact.component';
+import { NurseryComponent } from './nursery/nursery.component';
+import { NurseryStoreComponent } from './nursery-store/nursery-store.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 
@@ -45,6 +51,11 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     ForgetpasswordComponent,
     RegisterComponent,
+    LogoutComponent,
+    ContactComponent,
+    NurseryComponent,
+    NurseryStoreComponent,
+    CheckoutComponent,
 
     
   
@@ -62,6 +73,7 @@ import { RegisterComponent } from './register/register.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgToastModule
   
    
   ],

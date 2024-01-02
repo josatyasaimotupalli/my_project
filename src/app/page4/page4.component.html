@@ -1,11 +1,11 @@
 <section class="container nav">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
+          <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent (1).png"class="logo" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
+          <div class="collapse navbar-collapse justify-content-center " id="mynavbar">
             <ul class="navbar-nav me-auto ">
               <li class="nav-item">
                 <a class="nav-link"aria-current="page2"[routerLink]="'/page1'">Farmer</a>
@@ -14,16 +14,28 @@
                 <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Groceries</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"aria-current="page2"[routerLink]="'/page3'">Aquaculture</a>
+                <a class="nav-link"aria-current="page2"[routerLink]="'/nursery'">Nursery Plants</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"aria-current="page2"[routerLink]="'/page4'" role="button" data-bs-toggle="dropdown">The Weaver</a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item bg-dark text-light" [routerLink]="'/fashion'">fashion Store</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link"aria-current="page2"[routerLink]="'/page4'">The Weaver</a>
+                <a class="nav-link"aria-current="page2"[routerLink]="'/contact'">Contact Us</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-secondary" type="button">Search</button>
-            </form>
+            <i class="" style="font-size: 30px;" [routerLink]="'/favourite'"><img src="assets/icons8-flower-30 (3).png"></i>
+            <div style="font-size: 9px;" class="badge bg-danger Search">{{favourite}}</div>&nbsp;&nbsp;&nbsp;
+            <i class="" style="font-size: 30px;" [routerLink]="'/card'"><img src="assets/icons8-shopping-cart-24.png"></i>
+            <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>
+            &nbsp;&nbsp;&nbsp;
+              <form class="d-flex">
+                <div>
+                <button class="btn btn-light rounded-pill "[routerLink]="'/logout'" type="button">Logout</button>
+                </div>
+              </form>
           </div>
         </div>
       </nav>
@@ -38,9 +50,6 @@
         </div>
       </div>
     </div>
-    <div class="text-center b">
-      <button class="btn btn-outline-warning btn-lg  btn-rounded"  [routerLink]="'/fashion'">fashion style</button>
-    </div>
   <br>
     <div class="text-center">
         <h1>Handloom Weaving </h1>
@@ -53,7 +62,7 @@
           <!-- Image Column -->
           <div class="col-6 col-md-6">
             <div class="">
-            <img src="assets/akhil-pawar-XCd_6nOdzjo-unsplash.jpg" alt="Your Image" class="img-fluid img shadow-lg p-0 mb-5 bg-body rounded-5">
+            <img src="assets/7782097.jpg" alt="Your Image" class="img-fluid img ">
             </div>
           </div>
     
@@ -71,7 +80,7 @@
         </div>
       </div>
       <br>
-      <div class="text-center">
+      <div class="text-center container">
         <h1>Traditional Pattu Saree Design</h1>
         <p>Pattu sarees are synonymous with grace, elegance, and tradition. The design process involves a meticulous blend of artistic vision and skilled craftsmanship.</p>
       </div>
@@ -91,7 +100,7 @@
           <!-- Content Column -->
           <div class="col-6 col-md-6">
             <div class="">
-                <img src="assets/hp-koch-2OuTr9_VaUg-unsplash.jpg" alt="Your Image" class="img-fluid shadow-lg p-0 mb-5 bg-body img rounded-5">
+                <img src="assets/4896618.jpg" alt="Your Image" class="img-fluid  img">
                 </div>
           </div>
         </div>
@@ -104,7 +113,7 @@
             <!-- Image Column -->
             <div class="col-6 col-md-6">
               <div class="">
-              <img src="assets/aditya-wardhana-2Tnr1FMHy2g-unsplash.jpg" alt="Your Image" class="img-fluid shadow-lg p-0 mb-5 bg-body img rounded-5">
+              <img src="assets/4932162.jpg" alt="Your Image" class="img-fluid  img">
               </div>
             </div>
       
@@ -170,7 +179,7 @@
           <div class="col-3 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
             <!-- Content -->
             <h5 class="text-uppercase mb-4">
-              <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/icons8-leaf-20 (1).png"></i>Farmer
+              <i class="logo" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/farmer-high-resolution-logo-white-transparent.png" class="logo"></i>
             </h5>
             <p>
               “Agriculture is the most healthful, most useful, and most noble employment of man.”

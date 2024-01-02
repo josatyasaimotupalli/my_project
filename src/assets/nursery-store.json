@@ -1,0 +1,78 @@
+[
+    {
+      "id": 1,
+      "title": "plants",
+      "text": "Some quick example text for card 1.",
+      "imageSrc": "assets/42784.jpg"
+    },
+    {
+      "id": 2,
+      "title": "plants ",
+      "text": "Some quick example text for card 2.",
+      "imageSrc": "assets/43234.jpg"
+    },
+    {   
+       "id": 3,
+        "title": "plants",
+        "text": "Some quick example text for card 3.",
+        "imageSrc": "assets/3544.jpg"
+      },
+      {
+        "id": 4,
+        "title": "plants",
+        "text": "Some quick example text for card 4.",
+        "imageSrc": "assets/40364.jpg"
+      },
+
+
+      {
+        "id": 5,
+        "title": "plants",
+        "text": "Some quick example text for card 1.",
+        "imageSrc": "assets/41667.jpg"
+      },
+      {
+        "id": 6,
+        "title": "plants",
+        "text": "Some quick example text for card 2.",
+        "imageSrc": "assets/41452.jpg"
+      },
+      {  
+          "id": 7,
+          "title": "plants",
+          "text": "Some quick example text for card 3.",
+          "imageSrc": "assets/3500.jpg"
+        },
+        {
+          "id": 8,
+          "title": "plants",
+          "text": "Some quick example text for card 4.",
+          "imageSrc": "assets/2150905042 (1).jpg"
+        },     
+        
+        {  
+           "id": 9,
+            "title": "plants",
+            "text": "Some quick example text for card 1.",
+            "imageSrc": "assets/32433.jpg"
+          },
+          { 
+            "id": 10,
+            "title": "plants",
+            "text": "Some quick example text for card 2.",
+            "imageSrc": "assets/50466.jpg"
+          },
+          {  
+             "id": 11,
+              "title": "plants ",
+              "text": "Some quick example text for card 3.",
+              "imageSrc": "assets/30693.jpg"
+            },
+            { 
+              "id": 12,
+              "title": "plants",
+              "text": "Some quick example text for card 4.",
+              "imageSrc": "assets/steven-weeks-DUPFowqI6oI-unsplash.jpg"
+            }
+
+]

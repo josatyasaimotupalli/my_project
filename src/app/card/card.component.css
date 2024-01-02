@@ -60,3 +60,19 @@
       font-size: 13px;
     }
   }
+
+  .scrollable-column {
+    height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .fixed-column {
+    position: sticky;
+    top: 0;
+    height: 90vh;
+  }
+
+  .cart{
+    padding: 0px;
+    margin: 0px;
+  }

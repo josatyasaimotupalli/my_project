@@ -2,25 +2,33 @@
     {
       "id": 1,
       "title": "rice",
-      "text": "Some quick example text for card 1.",
+      "text": "New Rice/Akki - Sona Masoori",
+      "price":"₹75",
+      "price1":"₹85",
       "imageSrc": "assets/white_rice_bags_in_more_different_colours_brand_.jpg"
     },
     {
       "id": 2,
       "title": "spices ",
-      "text": "Some quick example text for card 2.",
+      "text": "Sunrise Pure Shahi Garam Masala",
+      "price":"₹ 12",
+      "price1":"₹15",
       "imageSrc": "assets/spices_bags_in_more_different_colours_brand_name.jpg"
     },
     {   
        "id": 3,
         "title": "pulses",
-        "text": "Some quick example text for card 3.",
+        "text": "Moong Dal/Hesaru Bele",
+        "price":"₹ 15",
+        "price1":"₹ 18",
         "imageSrc": "assets/pulses_bags_in_different_colours_brand_nameFar.jpg"
       },
       {
         "id": 4,
         "title": "masoor dal",
-        "text": "Some quick example text for card 4.",
+        "text": "Masoor Dal/Mysore Bele",
+        "price":"₹ 20",
+        "price1":"₹ 21",
         "imageSrc": "assets/masoor_dal_bags_brand_nameFarmer_illustratio.jpg"
       },
 
@@ -28,50 +36,67 @@
       {
         "id": 5,
         "title": "green peas",
-        "text": "Some quick example text for card 1.",
+        "text": "Spicy Fried Green Peas,Evening",
+        "price":"₹ 20",
+        "price1":"₹ 25",
         "imageSrc": "assets/green_peas_bag_brand_nameFarmer_illustration.jpg"
       },
       {
         "id": 6,
         "title": "coffee",
-        "text": "Some quick example text for card 2.",
+        "text": "Classic 100% Pure Instant Coffee",
+        "price":"₹ 7",
+        "price1":"₹10",
         "imageSrc": "assets/coffee_bags_brand_nameFarmer_illustration_p.jpg"
       },
       {  
           "id": 7,
           "title": "chickpea split",
-          "text": "Some quick example text for card 3.",
+          "text": "Chana Dal - Spilt Chickpeas",
+          "price":"₹10",
+          "price1":"₹15",
           "imageSrc": "assets/chickpea_split_bags_brand_nameFarmer_illustr.jpg"
         },
         {
           "id": 8,
           "title": "rice",
-          "text": "Some quick example text for card 4.",
+          "text": "Basmati Rice - Rozana Premium",
+          "price":"₹60", 
+          "price1":"₹85",
+
           "imageSrc": "assets/white_rice_bags_brand_nameFarmer_illustratio.jpg"
         },     
         
         {  
            "id": 9,
             "title": "pulses",
-            "text": "Some quick example text for card 1.",
+            "text": "Toor Dal/Togari Bele - Desi",
+            "price":"₹20",
+            "price1":"₹25",
             "imageSrc": "assets/pulses_bags_in_different_colours_brand_nameFar (2).jpg"
           },
           { 
             "id": 10,
             "title": "pickles",
-            "text": "Some quick example text for card 2.",
+            "text": " Organic Mustard Oil Mango Pickle",
+            "price":"₹10",
+            "price1":"₹15",
             "imageSrc": "assets/pickles_bags_in_more_different_colours_brand_nam.jpg"
           },
           {  
              "id": 11,
               "title": "spices ",
-              "text": "Some quick example text for card 3.",
+              "text": "Pure Kashmiri Chilli/Mirch Powder.",
+              "price":"₹5",
+              "price1":"₹7",
               "imageSrc": "assets/spices_bags_in_more_different_colours_brand_name.jpg"
             },
             { 
               "id": 12,
               "title": "sunflower oil",
-              "text": "Some quick example text for card 4.",
+              "text": "Sunlite Sunflower Refined Oil",
+              "price":"₹7",
+              "price1":"₹10",
               "imageSrc": "assets/sunflower_oil_bottles_brand_nameFarmer_illus.jpg"
             }
 

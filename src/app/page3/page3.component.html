@@ -1,7 +1,7 @@
 <section class="container nav">
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
+        <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent (1).png"class="logo" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -14,16 +14,28 @@
               <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Groceries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"aria-current="page2"[routerLink]="'/page3'">Aquaculture</a>
+              <a class="nav-link"aria-current="page2"[routerLink]="'/nursery'">Nursery Plants</a>
             </li>
             <li class="nav-item">
               <a class="nav-link"aria-current="page2"[routerLink]="'/page4'">The Weaver</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/contact'">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/contact'">Contact Us</a>
+            </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary" type="button">Search</button>
-          </form>
+          <i class="" style="font-size: 30px;" [routerLink]="'/favourite'"><img src="assets/icons8-flower-30 (3).png"></i>
+        <div style="font-size: 9px;" class="badge bg-danger Search">{{favourite}}</div>&nbsp;&nbsp;&nbsp;
+          <i class="" style="font-size: 30px;" [routerLink]="'/card'"><img src="assets/icons8-shopping-cart-24.png"></i>
+            <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>
+            &nbsp;&nbsp;&nbsp;
+            <form class="d-flex">
+              <div>
+              <button class="btn btn-light rounded-pill "[routerLink]="'/logout'" type="button">Logout</button>
+              </div>
+            </form>
         </div>
       </div>
     </nav>
@@ -214,7 +226,7 @@
             <div class="col-3 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
               <!-- Content -->
               <h5 class="text-uppercase mb-4">
-                <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/icons8-leaf-20 (1).png"></i>Farmer
+                <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/farmer-high-resolution-logo-white-transparent.png" class="logo"></i>
               </h5>
               <p>
                 “Agriculture is the most healthful, most useful, and most noble employment of man.”
