@@ -2,6 +2,10 @@ import { Component ,OnInit} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CardService } from '../service/card.service';
 
+import { FavouriteService } from '../service/favourite.service';
+
+
+
 @Component({
   selector: 'app-page1.0',
   templateUrl: './page1.0.component.html',
@@ -12,11 +16,13 @@ export class Page10Component implements OnInit{
   public totalcard : number = 0;
   searchKey:string ="";
   public searchTerm : string = '';
+  public favourite : number = 0;
 
   cards: any[]=[];
 
-  constructor(private http: HttpClient,private cardservice: CardService ) {}
+  constructor(private http: HttpClient,private cardservice: CardService,private FavouriteService:FavouriteService) {}
   ngOnInit(): void {
+   
     
     this.http.get<any[]>('assets/page10.json').subscribe(data => {
       this.cards = data;
@@ -32,6 +38,11 @@ export class Page10Component implements OnInit{
     this.cardservice.search.subscribe(val=>{
       this.searchKey = val;
     })
+    this.FavouriteService.getProducts()
+    .subscribe(res=>{
+      this.favourite = res.length;
+
+    })
   }
   
   addtocard(card:any){
@@ -44,7 +55,16 @@ export class Page10Component implements OnInit{
     console.log(this.searchTerm)
     this.cardservice.search.next(this.searchTerm);
   }
-}
+
+  Favouritetocard(card:any){
+    this.FavouriteService.favouritetocard(card);
+
+
+  }
+  
+  
+ 
+  }
 
 
 

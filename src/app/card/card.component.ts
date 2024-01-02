@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CardService } from '../service/card.service';
-
+import { FavouriteService } from '../service/favourite.service';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -12,9 +12,10 @@ export class CardComponent implements OnInit {
   public product:any=[]
   public grandTotal : number = 0;
   public totalcard : number = 0;
+  public favourite: number= 0;
 
 
-  constructor(private cardservice:CardService){}
+  constructor(private cardservice:CardService,private FavouriteService:FavouriteService){}
 
   ngOnInit(): void {
     this.cardservice.getProducts()
@@ -27,13 +28,24 @@ export class CardComponent implements OnInit {
       this.totalcard = res.length;
 
     })
+    this.FavouriteService.getProducts()
+    .subscribe(res=>{
+      this.favourite = res.length;
+
+    })
     
   }
   removecard(card:any){
     this.cardservice.removeCarItem(card);
   }
-  emptycard(card:any){
+  emptycard(){
     this.cardservice.removeAllcard();
   }
+  Favouritetocard(card:any){
+    this.FavouriteService.favouritetocard(card);
+
+
+  }
+  
 
 }

@@ -1,31 +1,31 @@
 .girl{
-    margin-left:200px ;
+  margin-left:200px ;
 
 }
 .image{
-    height: 570px;
-    width: 1000px;
+  height: 570px;
+  width: 1000px;
 }
 @media (max-width: 600px) {
-    .image{
-      width : 270px;
-      height: 150px;
-      margin-left: 45px;
-    }
-    .text{
-      font-size: 13px;
-    }
+  .image{
+    width : 270px;
+    height: auto;
+    margin-left: 60px;
+  }
+  .text{
+    font-size: 13px;
+  }
 }
 .logo{
-    width: 70px;
-    height: 30px;
-  }
+  width: 70px;
+  height: 30px;
+}
 .logout{
-    margin-left: 20px;
+  margin-left: 20px;
 }
 /*@media (max-width: 900px) {
-    .image{
-      width : auto;
-      height: auto;
-    }
+  .image{
+    width : auto;
+    height: auto;
+  }
 }*/

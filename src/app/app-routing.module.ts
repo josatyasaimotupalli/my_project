@@ -13,6 +13,10 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { ContactComponent } from './contact/contact.component';
+import { NurseryComponent } from './nursery/nursery.component';
+import { NurseryStoreComponent } from './nursery-store/nursery-store.component';
+import { OrderComponent } from './order/order.component';
 
 const routes: Routes = [
   {path: "", redirectTo:'/login',pathMatch:'full'},
@@ -28,7 +32,11 @@ const routes: Routes = [
   {path:'product-detail',component:ProductDetailComponent},
   {path:'login',component:LoginComponent},
   {path:'forgetpassword',component:ForgetpasswordComponent},
-  {path:'register',component:RegisterComponent}
+  {path:'register',component:RegisterComponent},
+  {path:'contact',component:ContactComponent},
+  {path:'nursery',component:NurseryComponent},
+  {path:'nursery-store',component:NurseryStoreComponent},
+  {path:'order',component:OrderComponent}
 
 
 

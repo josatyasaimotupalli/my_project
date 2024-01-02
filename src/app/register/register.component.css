@@ -8,9 +8,9 @@
 }
 @media (max-width: 600px) {
     .image{
-      width : 260px;
-      height: 150px;
-      margin-left: 45px;
+      width : 270px;
+      height: auto;
+      margin-left: 60px;
     }
 }
 .logo{

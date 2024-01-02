@@ -1,257 +1,265 @@
 <section class="container nav">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent.png"class="logo" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="mynavbar">
-            <ul class="navbar-nav me-auto ">
-              <li class="nav-item">
-                <a class="nav-link"aria-current="page2"[routerLink]="'/page1'">Farmer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Groceries</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"aria-current="page2"[routerLink]="'/page3'">Aquaculture</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"aria-current="page2"[routerLink]="'/page4'">The Weaver</a>
-              </li>
-            </ul>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)"><img src="assets/farmer-high-resolution-logo-transparent (1).png"class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center " id="mynavbar">
+          <ul class="navbar-nav me-auto ">
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/page1'">Farmer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page2"[routerLink]="'/page2'">Groceries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/nursery'">Nursery Plants</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"aria-current="page2"[routerLink]="'/page4'" role="button" data-bs-toggle="dropdown">The Weaver</a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item bg-dark text-light" [routerLink]="'/fashion'">fashion Store</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page2"[routerLink]="'/contact'">Contact Us</a>
+            </li>
+          </ul>
+          <i class="" style="font-size: 30px;" [routerLink]="'/favourite'"><img src="assets/icons8-flower-30 (3).png"></i>
+          <div style="font-size: 9px;" class="badge bg-danger Search">{{favourite}}</div>&nbsp;&nbsp;&nbsp;
+          <i class="" style="font-size: 30px;" [routerLink]="'/card'"><img src="assets/icons8-shopping-cart-24.png"></i>
+          <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>
+          &nbsp;&nbsp;&nbsp;
             <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-secondary" type="button">Search</button>
+              <div>
+              <button class="btn btn-light rounded-pill "[routerLink]="'/logout'" type="button">Logout</button>
+              </div>
             </form>
-          </div>
         </div>
-      </nav>
-  </section> 
-  <br><br>
-  <div class="image-container">
-      <div class="container-fluid mt-3">
-        <div class="row">
-          <div class="col text-center">
-            <img src="assets/Firefly the weaver-fashion traditional dresses 3D 13507.png" id="animated-image"style="width: auto; height:auto;" class="img-fluid img">
-          </div>
+      </div>
+    </nav>
+</section> 
+<br><br>
+<div class="image-container">
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col text-center">
+          <img src="assets/Firefly the weaver-fashion traditional dresses 3D 13507.png" id="animated-image"style="width: auto; height:auto;" class="img-fluid img">
         </div>
       </div>
     </div>
-    <div class="text-center b">
-      <button class="btn btn-outline-warning btn-lg  btn-rounded"  [routerLink]="'/fashion'">fashion style</button>
-    </div>
+  </div>
+<br>
+  <div class="text-center">
+      <h1>Handloom Weaving </h1>
+      <p>Traditional Pattu Saree Design Making On Chenetha</p>
+  </div>
   <br>
-    <div class="text-center">
-        <h1>Handloom Weaving </h1>
-        <p>Traditional Pattu Saree Design Making On Chenetha</p>
+
+  <div class="container">
+      <div class="row">
+        <!-- Image Column -->
+        <div class="col-6 col-md-6">
+          <div class="">
+          <img src="assets/7782097.jpg" alt="Your Image" class="img-fluid img ">
+          </div>
+        </div>
+  
+        <!-- Content Column -->
+        <div class="col-6 col-md-6">
+          <h2>Handloom Weaving and Pattu Saree Design on Chenetha</h2>
+          <h6>In the vibrant world of textiles, the art of handloom weaving takes center stage, weaving together threads of tradition and craftsmanship. One such exquisite form is the creation of Pattu sarees on Chenetha, a fabric that has transcended generations with its timeless appeal</h6>
+      
+          <h2>Zari Work</h2>
+           <h6>Intricate patterns using gold or silver threads, known as zari, add a touch of opulence to Pattu sarees.
+
+           </h6>
+          <!-- Add your content here -->
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="text-center container">
+      <h1>Traditional Pattu Saree Design</h1>
+      <p>Pattu sarees are synonymous with grace, elegance, and tradition. The design process involves a meticulous blend of artistic vision and skilled craftsmanship.</p>
     </div>
     <br>
   
-    <div class="container">
+  
+    <div class="container reveal">
+      <div class="row">
+        <!-- Image Column -->
+        <div class="col-6 col-md-6">
+         <h2>Handloom Weaving: A Time-Honored Craft</h2>
+         <h6>Handloom weaving is an ancient craft that has been passed down through generations, preserving the essence of cultural heritage. The rhythmic dance of the shuttle, the click-clack of the loom, and the skillful hands of the weaver come together to create a masterpiece of textile art.</h6>
+         <h2>The Chenetha Fabric</h2>
+         <h6>Chenetha, a term derived from the Telugu language, refers to the intricately woven fabric used in crafting Pattu sarees. </h6>
+        </div>
+  
+        <!-- Content Column -->
+        <div class="col-6 col-md-6">
+          <div class="">
+              <img src="assets/4896618.jpg" alt="Your Image" class="img-fluid  img">
+              </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+  
+    <div class="container reveal">
         <div class="row">
           <!-- Image Column -->
           <div class="col-6 col-md-6">
             <div class="">
-            <img src="assets/akhil-pawar-XCd_6nOdzjo-unsplash.jpg" alt="Your Image" class="img-fluid img shadow-lg p-0 mb-5 bg-body rounded-5">
+            <img src="assets/4932162.jpg" alt="Your Image" class="img-fluid  img">
             </div>
           </div>
     
           <!-- Content Column -->
           <div class="col-6 col-md-6">
-            <h2>Handloom Weaving and Pattu Saree Design on Chenetha</h2>
-            <h6>In the vibrant world of textiles, the art of handloom weaving takes center stage, weaving together threads of tradition and craftsmanship. One such exquisite form is the creation of Pattu sarees on Chenetha, a fabric that has transcended generations with its timeless appeal</h6>
-        
-            <h2>Zari Work</h2>
-             <h6>Intricate patterns using gold or silver threads, known as zari, add a touch of opulence to Pattu sarees.
-
-             </h6>
+            <h2>Preserving Heritage</h2>
+            <h6>The art of handloom weaving and Pattu saree design on Chenetha is not merely a craft; it's a celebration of cultural heritage. Supporting this traditional art form helps sustain the livelihoods of skilled artisans and ensures the continuation of a legacy that has stood the test of time.</h6>
+          
+            <h2>Conclusion</h2>
+             <h6>In a world that often races towards modernity, the art of handloom weaving and Pattu saree design on Chenetha stands as a testament to the enduring beauty of tradition
+                </h6>
             <!-- Add your content here -->
           </div>
         </div>
       </div>
-      <br>
-      <div class="text-center">
-        <h1>Traditional Pattu Saree Design</h1>
-        <p>Pattu sarees are synonymous with grace, elegance, and tradition. The design process involves a meticulous blend of artistic vision and skilled craftsmanship.</p>
-      </div>
-      <br>
-    
-    
-      <div class="container reveal">
-        <div class="row">
-          <!-- Image Column -->
-          <div class="col-6 col-md-6">
-           <h2>Handloom Weaving: A Time-Honored Craft</h2>
-           <h6>Handloom weaving is an ancient craft that has been passed down through generations, preserving the essence of cultural heritage. The rhythmic dance of the shuttle, the click-clack of the loom, and the skillful hands of the weaver come together to create a masterpiece of textile art.</h6>
-           <h2>The Chenetha Fabric</h2>
-           <h6>Chenetha, a term derived from the Telugu language, refers to the intricately woven fabric used in crafting Pattu sarees. </h6>
-          </div>
-    
-          <!-- Content Column -->
-          <div class="col-6 col-md-6">
-            <div class="">
-                <img src="assets/hp-koch-2OuTr9_VaUg-unsplash.jpg" alt="Your Image" class="img-fluid shadow-lg p-0 mb-5 bg-body img rounded-5">
-                </div>
-          </div>
-        </div>
-      </div>
-      <br>
-  
-    
-      <div class="container reveal">
-          <div class="row">
-            <!-- Image Column -->
-            <div class="col-6 col-md-6">
-              <div class="">
-              <img src="assets/aditya-wardhana-2Tnr1FMHy2g-unsplash.jpg" alt="Your Image" class="img-fluid shadow-lg p-0 mb-5 bg-body img rounded-5">
-              </div>
-            </div>
-      
-            <!-- Content Column -->
-            <div class="col-6 col-md-6">
-              <h2>Preserving Heritage</h2>
-              <h6>The art of handloom weaving and Pattu saree design on Chenetha is not merely a craft; it's a celebration of cultural heritage. Supporting this traditional art form helps sustain the livelihoods of skilled artisans and ensures the continuation of a legacy that has stood the test of time.</h6>
-            
-              <h2>Conclusion</h2>
-               <h6>In a world that often races towards modernity, the art of handloom weaving and Pattu saree design on Chenetha stands as a testament to the enduring beauty of tradition
-                  </h6>
-              <!-- Add your content here -->
-            </div>
-          </div>
-        </div>
-     <!--<section class="mb-5 mb-lg-10">-->  
-  <br>
-  <div class="row">
-    <div class="col-6 col-sm-6 text-end">
-      <img src="assets/2527722.jpg" alt="logo" class="logo3 img-fluid">
-    </div>
-    <div class="col-6 col-sm-6">
-        <button class="btn btn-warning btn-lg center" style="margin-top: 70px; margin-left: 20px;" [routerLink]="'/fashion'"><h5 class="text-light text-center">fashion style</h5></button>
-    </div>
+   <!--<section class="mb-5 mb-lg-10">-->  
+<br>
+<div class="row">
+  <div class="col-6 col-sm-6 text-end">
+    <img src="assets/2527722.jpg" alt="logo" class="logo3 img-fluid">
   </div>
-  <br>
-  <section class="content">
-    <!-- Footer -->
-  <footer class="text-center text-lg-start text-light bg-dark text-muted shadow-lg rounded-top-5">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block text-white">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-  
-      <!-- Right -->
-      <div class="">
-        <a href="" class="me-4 link-secondary">
-          <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-facebook-f-24.png"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-instagram-25.png"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-linkedin-25.png"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-twitter-25 (1).png"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-  
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5 text-white">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-3 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
-            <!-- Content -->
-            <h5 class="text-uppercase mb-4">
-              <i class="" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/icons8-leaf-20 (1).png"></i>Farmer
-            </h5>
-            <p>
-              “Agriculture is the most healthful, most useful, and most noble employment of man.”
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-3 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h5 class="text-uppercase  mb-4">
-             Product 
-            </h5>
-            <p>
-              <a href="#!" class="text-reset ">Rice</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Coffee</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Spices</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Pulsees</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-3 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h5 class="text-uppercase  mb-4">
-              Useful links
-            </h5>
-            <p>
-              <a href="" class="text-reset">Farmer</a>
-            </p>
-            <p>
-              <a href="" class="text-reset">Agirculture</a>
-            </p>
-            <p>
-              <a href="" class="text-reset">Aquaculture</a>
-            </p>
-            <p>
-              <a href="" class="text-reset">The Weaver</a>
-            </p>
-            
-            
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-3 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h5 class="text-uppercase  mb-4">Contact</h5>
-            <p><i class="i"[routerLink]="'/card'"><img src="assets/icons8-homeadvisor-24.png" class="icon"></i>
-               2-134,cinima veedhi,G.vemavaram,East Godavari,Andhra Pradesh-533464
-              </p>
-            <p>
-              <i class="img"  [routerLink]="'/card'"><img src="assets/icons8-gmail-24.png"  class="icon"></i>
-               Farmer@gmail.com
-            </p>
-            <p><i class="i"  [routerLink]="'/card'"><img src="assets/icons8-phone-24.png"  class="icon"></i> +91 93478 77756</p>
-            <p><i class="i"  [routerLink]="'/card'"><img src="assets/icons8-phone-24 (1).png"  class="icon"></i>+91 96667 54367
-  
-            </p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-  
-    <!-- Copyright -->
-    <div class="text-center text-light p-4" style="background-color: rgba(239, 233, 233, 0.025);">
-      © 2023 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Farmer.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+  <div class="col-6 col-sm-6">
+      <button class="btn btn-warning btn-lg center" style="margin-top: 70px; margin-left: 20px;" [routerLink]="'/fashion'"><h5 class="text-light text-center">fashion style</h5></button>
+  </div>
+</div>
+<br>
+<section class="content">
   <!-- Footer -->
+<footer class="text-center text-lg-start text-light bg-dark text-muted shadow-lg rounded-top-5">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block text-white">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div class="">
+      <a href="" class="me-4 link-secondary">
+        <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-facebook-f-24.png"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-instagram-25.png"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-linkedin-25.png"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="" style="font-size: 24px;" [routerLink]="'/card'"><img src="assets/icons8-twitter-25 (1).png"></i>
+      </a>
+    </div>
+    <!-- Right -->
   </section>
-  
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5 text-white">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-3 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
+          <!-- Content -->
+          <h5 class="text-uppercase mb-4">
+            <i class="logo" style="margin-right: 10px;" [routerLink]="'/card'"><img src="assets/farmer-high-resolution-logo-white-transparent.png" class="logo"></i>
+          </h5>
+          <p>
+            “Agriculture is the most healthful, most useful, and most noble employment of man.”
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-3 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase  mb-4">
+           Product 
+          </h5>
+          <p>
+            <a href="#!" class="text-reset ">Rice</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Coffee</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Spices</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pulsees</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-3 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase  mb-4">
+            Useful links
+          </h5>
+          <p>
+            <a href="" class="text-reset">Farmer</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Agirculture</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Aquaculture</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">The Weaver</a>
+          </p>
+          
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-3 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h5 class="text-uppercase  mb-4">Contact</h5>
+          <p><i class="i"[routerLink]="'/card'"><img src="assets/icons8-homeadvisor-24.png" class="icon"></i>
+             2-134,cinima veedhi,G.vemavaram,East Godavari,Andhra Pradesh-533464
+            </p>
+          <p>
+            <i class="img"  [routerLink]="'/card'"><img src="assets/icons8-gmail-24.png"  class="icon"></i>
+             Farmer&#64;gmail.com
+          </p>
+          <p><i class="i"  [routerLink]="'/card'"><img src="assets/icons8-phone-24.png"  class="icon"></i> +91 93478 77756</p>
+          <p><i class="i"  [routerLink]="'/card'"><img src="assets/icons8-phone-24 (1).png"  class="icon"></i>+91 96667 54367
+
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center text-light p-4" style="background-color: rgba(239, 233, 233, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Farmer.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</section>

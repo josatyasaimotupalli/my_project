@@ -1,62 +1,78 @@
 .logo{
-    width: 70px;
-    height: 30px;
-  }
-  .Search{
-    margin-right:20px;
-  }
-  .card{
-    height: 60vh;
-    margin: 25px;
-    padding: 25px;
-  }
-  .center img{
-    text-decoration: none;
-    color: inherit;
-    border: none;
-    height: 250px;
-    width: 250px;
-    margin: 10px 0px;
-  }
-  h4,h6{
-    font-weight: 400;
-  }
-  .center{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-  }
-  .card-table{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: none;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,0.2);
-    border-radius: .25rem;
-  }
-  .center.btn{
-    font-size: 14px !important;
-    margin-top: 20px !important;
-    font-weight: 400;
-    padding: 12px 72px;
-    border-radius: 3px !important;
+  width: 70px;
+  height: 30px;
+}
+.Search{
+  margin-right:20px;
+}
+.card{
+  height: 60vh;
+  margin: 25px;
+  padding: 25px;
+}
+.center img{
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  height: 250px;
+  width: 250px;
+  margin: 10px 0px;
+}
+h4,h6{
+  font-weight: 400;
+}
+.center{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.card-table{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: none;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: .25rem;
+}
+.center.btn{
+  font-size: 14px !important;
+  margin-top: 20px !important;
+  font-weight: 400;
+  padding: 12px 72px;
+  border-radius: 3px !important;
 
-  }
+}
+.image6{
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 1000px) {
   .image6{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 70px;
   }
-  @media (max-width: 1000px) {
-    .image6{
-      width: 100px;
-      height: 70px;
-    }
-    .text{
-      font-size: 13px;
-    }
+  .text{
+    font-size: 13px;
   }
+}
+
+.scrollable-column {
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.fixed-column {
+  position: sticky;
+  top: 0;
+  height: 90vh;
+}
+
+.cart{
+  padding: 0px;
+  margin: 0px;
+}

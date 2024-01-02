@@ -23,6 +23,10 @@ import { ActivatedRoute } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
 import { RegisterComponent } from './register/register.component';
+import { OrderComponent } from './order/order.component';
+import { NurseryStoreComponent } from './nursery-store/nursery-store.component';
+import { NurseryComponent } from './nursery/nursery.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -45,6 +49,10 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     ForgetpasswordComponent,
     RegisterComponent,
+    OrderComponent,
+    NurseryStoreComponent,
+    NurseryComponent,
+    ContactComponent,
 
     
   
