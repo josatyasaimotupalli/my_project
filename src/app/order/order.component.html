@@ -46,16 +46,10 @@
               >
             </li>
           </ul>
-          <i class="" style="font-size: 30px" [routerLink]="'/favourite'"
-            ><img src="assets/icons8-flower-30 (3).png"
-          /></i>
-          <div style="font-size: 9px" class="badge bg-danger Search"></div>
-          &nbsp;&nbsp;&nbsp;
-          <i class="" style="font-size: 30px" [routerLink]="'/card'"
-            ><img src="assets/icons8-shopping-cart-24.png"
-          /></i>
-          <div style="font-size: 9px" class="badge bg-danger Search"></div>
-          &nbsp;&nbsp;&nbsp;
+          <i class="" style="font-size: 30px;" href="" [routerLink]="'/favourite'"><img src="assets/icons8-flower-30 (3).png"></i>
+          <div style="font-size: 9px;" class="badge bg-danger Search">{{favourite}}</div>&nbsp;&nbsp;&nbsp;
+          <i class="" style="font-size: 30px;" href="" [routerLink]="'/card'"><img src="assets/icons8-shopping-cart-24.png"></i>
+          <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>&nbsp;&nbsp;
           <form class="d-flex">
             <div>
               <button
@@ -153,7 +147,7 @@
       <!-- Fixed Column -->
       <div class="col-md-4 fixed-column">
         <!-- Add content for the fixed column if needed -->
-        <h4 class="bg-body-secondary text-dark">Contact Information</h4>
+        <h4 class="bg-body-secondary text-dark shadow rounded-5 text-center ">Contact Information</h4>
         <div class="form-outline mb-3">
           <label class="form-label" for="form2Example1">Name</label>
           <input
@@ -178,7 +172,7 @@
         </div>
         <br /><br />
         <!-- 2 column grid layout for inline styling -->
-        <h4 class="bg-black text-light text-center f-w-300">PRICE DETAILS</h4>
+        <h4 class="bg-black text-light text-center f-w-300 shadow-lg rounded-5 ">PRICE DETAILS</h4>
         <br />
         <div class="row container-fluid">
           <div class="col-sm-6">

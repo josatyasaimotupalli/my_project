@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NurseryComponent } from './nursery/nursery.component';
 import { NurseryStoreComponent } from './nursery-store/nursery-store.component';
 import { OrderComponent } from './order/order.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   {path: "", redirectTo:'/login',pathMatch:'full'},
@@ -36,8 +37,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'nursery',component:NurseryComponent},
   {path:'nursery-store',component:NurseryStoreComponent},
-  {path:'order',component:OrderComponent}
-
+  {path:'order',component:OrderComponent},
+  {path:'logout',component:LogoutComponent}
 
 
 

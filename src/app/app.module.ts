@@ -27,6 +27,7 @@ import { OrderComponent } from './order/order.component';
 import { NurseryStoreComponent } from './nursery-store/nursery-store.component';
 import { NurseryComponent } from './nursery/nursery.component';
 import { ContactComponent } from './contact/contact.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 
@@ -53,6 +54,7 @@ import { ContactComponent } from './contact/contact.component';
     NurseryStoreComponent,
     NurseryComponent,
     ContactComponent,
+    LogoutComponent,
 
     
   

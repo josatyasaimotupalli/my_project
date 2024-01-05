@@ -1,0 +1,30 @@
+.image{
+    width: 650px;
+    height: auto;
+}
+.girl{
+    margin-left:200px ;
+
+}
+
+@media (max-width: 600px) {
+    
+    .text{
+      font-size: 13px;
+    }
+}
+.logo{
+    width: 70px;
+    height: 30px;
+  }
+.logout{
+    margin-left: 20px;
+}
+@media (max-width: 600px){
+.image[_ngcontent-ng-c3300698843] {
+    width: 500px;
+    height: 500px;
+    margin-left: 45px;
+    margin-top: 200px;
+}
+}

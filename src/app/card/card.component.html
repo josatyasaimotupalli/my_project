@@ -23,12 +23,10 @@
           <a class="nav-link"aria-current="page2"[routerLink]="'/contact'">Contact Us</a>
         </li>
       </ul>
-      <i class="" style="font-size: 30px;"><img src="assets/icons8-shopping-cart-24.png"></i>
+      <i class="" style="font-size: 30px;" href="" [routerLink]="'/favourite'"><img src="assets/icons8-flower-30 (3).png"></i>
+      <div style="font-size: 9px;" class="badge bg-danger Search">{{favourite}}</div>&nbsp;&nbsp;&nbsp;
+      <i class="" style="font-size: 30px;" href="" [routerLink]="'/card'"><img src="assets/icons8-shopping-cart-24.png"></i>
       <div style="font-size: 9px;" class="badge bg-danger Search">{{totalcard}}</div>&nbsp;&nbsp;
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-secondary rounded-pill " type="button">Search</button>
-      </form>
     </div>
   </div>
 </nav>
