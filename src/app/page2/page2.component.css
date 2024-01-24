@@ -1,7 +1,12 @@
 .img{
   width: 500px; /* Set the desired width */
   height: 350px; /* Set the desired height */
-  
+
+}
+.imgs{
+  width: 500px; /* Set the desired width */
+  height: 350px; /* Set the desired height */
+  filter: drop-shadow(15px 7px 5px #716d6d);
 }
 .img1{
 width: 330px;

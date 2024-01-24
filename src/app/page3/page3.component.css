@@ -1,7 +1,7 @@
 .img{
   width: 900px; /* Set the desired width */
   height: 300px; /* Set the desired height */
-  
+  filter: drop-shadow(15px 7px 5px #716d6d);
 }
 /* Define your custom animation 
 @keyframes zoomIn {
